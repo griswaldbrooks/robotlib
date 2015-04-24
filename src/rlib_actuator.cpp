@@ -32,13 +32,17 @@ namespace rlib{
 		std::cout << "Mobile Base " << getName() << " constructed." << std::endl;
 	}
 	// Set the pose of the actuator with respect to its origin.
-	void MobileBase::setPosition(Pose& pose){
+	void MobileBase::setPosition(Pose pose){
 		// Set limits on the pose
 		pose = pose;
-		std::cout << "Position set!" << std::endl;
+		std::cout << "Position set: (";
+		std::cout << pose.p.x() << ", ";
+		std::cout << pose.p.y() << ", ";
+		std::cout << pose.p.z() << ")";
+		std::cout << std::endl;
 	}
 	// Set the velocity of the actuator in the local frame.
-	void MobileBase::setVelocity(Vel& velocity){
+	void MobileBase::setVelocity(Vel velocity){
 		// Set limits on the velocity
 		velocity = velocity;
 		std::cout << "Velocity set!" << std::endl;

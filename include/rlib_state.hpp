@@ -34,10 +34,21 @@ namespace rlib{
 	// Class for defining pose.
 	class Pose{
 	public:
-		// Linear pose represented as x,y,z
+		// Default constructor
+		Pose();
+		// Constructor with initial values as xyz and rpy
+		// rpy is Roll, Pitch, Yaw, or Tait-Brian angles. Roll is about the
+		// x axis, then pitch is about the new y axis, and yaw is about the final
+		// z axis.
+		Pose(float x, float y = 0, float z = 0, float roll = 0, float pitch = 0, float yaw = 0);
+		// Set linear pose.
+		void setXYZ(float x, float y, float z);
+		// Set angular position by setting rpy as in the constructor.
+		void setRPY(float roll, float pitch, float yaw);
+		// Linear pose represented as x, y, z.
 		Eigen::Translation<float, 3> p;
-		// Angular pose represented as w x y z
-		Eigen::Quaternionf q;
+		// Angular pose represented as w, x, y, z.
+		Eigen::Quaternion<float> q;
 	};
 
 	// Class for defining rigid body transformations.

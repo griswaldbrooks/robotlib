@@ -30,7 +30,7 @@ namespace rlib{
 		std::cout << "Basic walker " << getName() << " constructed." << std::endl;
 	}
 	// Set the pose of the actuator with respect to its origin.
-	void NaoBasicWalker::setPosition(Pose& pose){
+	void NaoBasicWalker::setPosition(Pose pose){
 		// Set limits on the pose
 		pose = pose;
 		std::cout << "Position set!" << std::endl;
@@ -38,7 +38,7 @@ namespace rlib{
 		
 	}
 	// Set the velocity of the actuator in the local frame.
-	void NaoBasicWalker::setVelocity(Vel& velocity){
+	void NaoBasicWalker::setVelocity(Vel velocity){
 		// Set limits on the velocity
 		velocity = velocity;
 		std::cout << "Velocity set!" << std::endl;

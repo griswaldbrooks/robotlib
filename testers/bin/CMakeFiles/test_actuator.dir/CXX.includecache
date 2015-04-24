@@ -10,7 +10,7 @@
 string
 -
 rlib_state.hpp
-/home/crrl-user1/code_projects/robotlib/include/rlib_state.hpp
+-
 
 /home/crrl-user1/code_projects/robotlib/include/rlib_state.hpp
 eigen3/Eigen/Geometry
@@ -20,5 +20,7 @@ eigen3/Eigen/Geometry
 iostream
 -
 rlib_actuator.hpp
+-
+rlib_state.hpp
 -
 

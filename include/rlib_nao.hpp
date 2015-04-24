@@ -56,9 +56,9 @@ namespace rlib{
 	public:
 		NaoBasicWalker(const char * name);
 		// Set the pose of the actuator with respect to its origin.
-		void setPosition(Pose& pose);
+		void setPosition(Pose pose);
 		// Set the velocity of the actuator in the local frame.
-		void setVelocity(Vel& velocity);
+		void setVelocity(Vel velocity);
 	};
 
 	// TODO: Add builder class that returns a robot of type Nao.

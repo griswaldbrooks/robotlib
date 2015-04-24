@@ -27,7 +27,7 @@
 // Special Includes
 
 // Robot lib Includes
-#include "rlib_state.hpp"
+#include <rlib_state.hpp>
 
 namespace rlib{
 
@@ -37,9 +37,9 @@ namespace rlib{
 		// Constructor for the actuator class.
 		Actuator(const char * name);
 		// Set the pose of the actuator with respect to its origin.
-		virtual void setPosition(Pose& pose) = 0;
+		virtual void setPosition(Pose pose) = 0;
 		// Set the velocity of the actuator in the local frame.
-		virtual void setVelocity(Vel& velocity) = 0;
+		virtual void setVelocity(Vel velocity) = 0;
 		// Return name of actuator
 		std::string getName();
 		// Set the parent actuator
@@ -70,9 +70,9 @@ namespace rlib{
 	public:
 		MobileBase(const char * name);
 		// Set the pose of the actuator with respect to its origin.
-		void setPosition(Pose& pose);
+		void setPosition(Pose pose);
 		// Set the velocity of the actuator in the local frame.
-		void setVelocity(Vel& velocity);
+		void setVelocity(Vel velocity);
 	};
 
 }
