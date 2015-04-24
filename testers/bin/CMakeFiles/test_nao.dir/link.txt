@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/test_nao.dir/src/rlib_nao_tester.cpp.o  -o test_nao  -L/home/crrl-user1/code_projects/robotlib/lib -rdynamic -lROBOTLIB -Wl,-rpath,/home/crrl-user1/code_projects/robotlib/lib 

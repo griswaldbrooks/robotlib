@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/rlib_actuator.hpp
+string
+-
+rlib_state.hpp
+../include/rlib_state.hpp
+
+../include/rlib_state.hpp
+eigen3/Eigen/Geometry
+-
+
+/home/crrl-user1/code_projects/robotlib/src/rlib_actuator.cpp
+iostream
+-
+rlib_actuator.hpp
+-
+

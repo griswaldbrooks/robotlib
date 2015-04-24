@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,librobotlib.so -o librobotlib.so CMakeFiles/robotlib.dir/src/rlib_state.cpp.o 

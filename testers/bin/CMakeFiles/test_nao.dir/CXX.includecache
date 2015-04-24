@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/crrl-user1/code_projects/robotlib/include/rlib_actuator.hpp
+string
+-
+rlib_state.hpp
+/home/crrl-user1/code_projects/robotlib/include/rlib_state.hpp
+
+/home/crrl-user1/code_projects/robotlib/include/rlib_nao.hpp
+rlib_robot.hpp
+/home/crrl-user1/code_projects/robotlib/include/rlib_robot.hpp
+rlib_actuator.hpp
+/home/crrl-user1/code_projects/robotlib/include/rlib_actuator.hpp
+extApi.h
+/home/crrl-user1/code_projects/robotlib/include/extApi.h
+
+/home/crrl-user1/code_projects/robotlib/include/rlib_robot.hpp
+list
+-
+rlib_actuator.hpp
+/home/crrl-user1/code_projects/robotlib/include/rlib_actuator.hpp
+
+/home/crrl-user1/code_projects/robotlib/include/rlib_state.hpp
+eigen3/Eigen/Geometry
+-
+
+/home/crrl-user1/code_projects/robotlib/testers/src/rlib_nao_tester.cpp
+iostream
+-
+rlib_nao.hpp
+-
+

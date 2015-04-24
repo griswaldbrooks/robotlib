@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/rlib_state.hpp
+eigen3/Eigen/Geometry
+-
+
+/home/crrl-user1/code_projects/robotlib/src/rlib_state.cpp
+rlib_state.hpp
+-
+
