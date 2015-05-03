@@ -12,7 +12,9 @@ link_directories("${ROBOTLIB_DIR}/lib")
 # Create tester executables
 add_executable(test_actuator src/rlib_actuator_tester.cpp)
 add_executable(test_nao src/rlib_nao_tester.cpp)
+add_executable(test_navigation src/rlib_navigation_tester.cpp)
 
 # Add libraries
 target_link_libraries(test_actuator ROBOTLIB)
 target_link_libraries(test_nao ROBOTLIB)
+target_link_libraries(test_navigation ROBOTLIB)

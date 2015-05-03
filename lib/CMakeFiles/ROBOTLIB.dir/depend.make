@@ -11,6 +11,11 @@ CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_robot.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_state.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../src/rlib_nao.cpp
 
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_actuator.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_sensor.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_state.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../src/rlib_sensor.cpp
+
 CMakeFiles/ROBOTLIB.dir/src/rlib_state.cpp.o: ../include/rlib_state.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_state.cpp.o: ../src/rlib_state.cpp
 

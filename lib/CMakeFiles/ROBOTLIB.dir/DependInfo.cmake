@@ -6,6 +6,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/crrl-user1/code_projects/robotlib/src/rlib_actuator.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o"
   "/home/crrl-user1/code_projects/robotlib/src/rlib_nao.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o"
+  "/home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o"
   "/home/crrl-user1/code_projects/robotlib/src/rlib_state.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_state.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

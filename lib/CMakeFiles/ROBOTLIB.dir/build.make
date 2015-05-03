@@ -95,9 +95,32 @@ CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o.provides: CMakeFiles/ROBOTLIB.di
 
 CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o.provides.build: CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o
 
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: CMakeFiles/ROBOTLIB.dir/flags.make
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../src/rlib_sensor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/crrl-user1/code_projects/robotlib/lib/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o -c /home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp
+
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp > CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.i
+
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp -o CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.s
+
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.requires:
+.PHONY : CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.requires
+
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.provides: CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.provides.build
+.PHONY : CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.provides
+
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.provides.build: CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o
+
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: CMakeFiles/ROBOTLIB.dir/flags.make
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../src/rlib_nao.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/crrl-user1/code_projects/robotlib/lib/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/crrl-user1/code_projects/robotlib/lib/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o -c /home/crrl-user1/code_projects/robotlib/src/rlib_nao.cpp
 
@@ -122,6 +145,7 @@ CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o.provides.build: CMakeFiles/ROBOTLIB.d
 ROBOTLIB_OBJECTS = \
 "CMakeFiles/ROBOTLIB.dir/src/rlib_state.cpp.o" \
 "CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o" \
+"CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o" \
 "CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o"
 
 # External object files for target ROBOTLIB
@@ -129,6 +153,7 @@ ROBOTLIB_EXTERNAL_OBJECTS =
 
 libROBOTLIB.so: CMakeFiles/ROBOTLIB.dir/src/rlib_state.cpp.o
 libROBOTLIB.so: CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o
+libROBOTLIB.so: CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o
 libROBOTLIB.so: CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o
 libROBOTLIB.so: CMakeFiles/ROBOTLIB.dir/build.make
 libROBOTLIB.so: CMakeFiles/ROBOTLIB.dir/link.txt
@@ -141,6 +166,7 @@ CMakeFiles/ROBOTLIB.dir/build: libROBOTLIB.so
 
 CMakeFiles/ROBOTLIB.dir/requires: CMakeFiles/ROBOTLIB.dir/src/rlib_state.cpp.o.requires
 CMakeFiles/ROBOTLIB.dir/requires: CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o.requires
+CMakeFiles/ROBOTLIB.dir/requires: CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o.requires
 CMakeFiles/ROBOTLIB.dir/requires: CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o.requires
 .PHONY : CMakeFiles/ROBOTLIB.dir/requires
 

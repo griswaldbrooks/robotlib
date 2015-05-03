@@ -159,6 +159,30 @@ src/rlib_nao.cpp.s:
 	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.s
 .PHONY : src/rlib_nao.cpp.s
 
+src/rlib_sensor.o: src/rlib_sensor.cpp.o
+.PHONY : src/rlib_sensor.o
+
+# target to build an object file
+src/rlib_sensor.cpp.o:
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o
+.PHONY : src/rlib_sensor.cpp.o
+
+src/rlib_sensor.i: src/rlib_sensor.cpp.i
+.PHONY : src/rlib_sensor.i
+
+# target to preprocess a source file
+src/rlib_sensor.cpp.i:
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.i
+.PHONY : src/rlib_sensor.cpp.i
+
+src/rlib_sensor.s: src/rlib_sensor.cpp.s
+.PHONY : src/rlib_sensor.s
+
+# target to generate assembly for a file
+src/rlib_sensor.cpp.s:
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.s
+.PHONY : src/rlib_sensor.cpp.s
+
 src/rlib_state.o: src/rlib_state.cpp.o
 .PHONY : src/rlib_state.o
 
@@ -198,6 +222,9 @@ help:
 	@echo "... src/rlib_nao.o"
 	@echo "... src/rlib_nao.i"
 	@echo "... src/rlib_nao.s"
+	@echo "... src/rlib_sensor.o"
+	@echo "... src/rlib_sensor.i"
+	@echo "... src/rlib_sensor.s"
 	@echo "... src/rlib_state.o"
 	@echo "... src/rlib_state.i"
 	@echo "... src/rlib_state.s"

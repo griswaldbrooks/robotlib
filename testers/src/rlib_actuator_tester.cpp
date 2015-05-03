@@ -1,3 +1,13 @@
+// Robot Library v0.1
+// This is a library for contructing robot objects for
+// doing basic tasks such as sensing, navigation, and planning.
+// 
+// This is a unit tester for actuator objects.
+//
+// Author: Griswald Brooks
+// Email: griswald.brooks@gmail.com
+//
+
 // Standard Libraries
 #include <iostream>
 

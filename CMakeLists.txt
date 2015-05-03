@@ -15,6 +15,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 set(_libsrcs
 	src/rlib_state.cpp 
 	src/rlib_actuator.cpp
+	src/rlib_sensor.cpp
 	src/rlib_nao.cpp
 	)
 
