@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o"
   "CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o"
   "CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o"
+  "CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.o"
   "libROBOTLIB.pdb"
   "libROBOTLIB.so"
 )

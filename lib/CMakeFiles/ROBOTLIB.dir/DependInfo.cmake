@@ -4,6 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/crrl-user1/code_projects/robotlib/src/hokuyo_client.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.o"
   "/home/crrl-user1/code_projects/robotlib/src/rlib_actuator.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o"
   "/home/crrl-user1/code_projects/robotlib/src/rlib_nao.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o"
   "/home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp" "/home/crrl-user1/code_projects/robotlib/lib/CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o"

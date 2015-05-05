@@ -1,0 +1,170 @@
+\hypertarget{classhokuyo_1_1tcp__client}{\section{hokuyo\-:\-:tcp\-\_\-client Class Reference}
+\label{classhokuyo_1_1tcp__client}\index{hokuyo\-::tcp\-\_\-client@{hokuyo\-::tcp\-\_\-client}}
+}
+
+
+Hokuyo laser client.  
+
+
+
+
+{\ttfamily \#include $<$hokuyo\-\_\-client.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classhokuyo_1_1tcp__client_a8ffbb91db68f99829b3cd64e9875ce25}{const size\-\_\-t \hyperlink{classhokuyo_1_1tcp__client_a8ffbb91db68f99829b3cd64e9875ce25}{size} ()}\label{classhokuyo_1_1tcp__client_a8ffbb91db68f99829b3cd64e9875ce25}
+
+\begin{DoxyCompactList}\small\item\em returns the number of available angle/distance pairs \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_a3b0554fedfa5db82eb7dd98321e84c54}{const fbuffer \& \hyperlink{classhokuyo_1_1tcp__client_a3b0554fedfa5db82eb7dd98321e84c54}{get\-\_\-angles} ()}\label{classhokuyo_1_1tcp__client_a3b0554fedfa5db82eb7dd98321e84c54}
+
+\begin{DoxyCompactList}\small\item\em returns vector of angle (valid if \hyperlink{classhokuyo_1_1tcp__client_a130f57b5d6d61da417b3cbaac82c2afc}{avail()}==true) \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_accf06626b62b055ed25d2917059df73e}{const fbuffer \& \hyperlink{classhokuyo_1_1tcp__client_accf06626b62b055ed25d2917059df73e}{get\-\_\-distances} ()}\label{classhokuyo_1_1tcp__client_accf06626b62b055ed25d2917059df73e}
+
+\begin{DoxyCompactList}\small\item\em returns vector distances (valid if \hyperlink{classhokuyo_1_1tcp__client_a130f57b5d6d61da417b3cbaac82c2afc}{avail()}==true) \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_ab35989483cd8411fe7a634ab8a15057f}{const float \& \hyperlink{classhokuyo_1_1tcp__client_ab35989483cd8411fe7a634ab8a15057f}{get\-\_\-angle} (const size\-\_\-t idx)}\label{classhokuyo_1_1tcp__client_ab35989483cd8411fe7a634ab8a15057f}
+
+\begin{DoxyCompactList}\small\item\em returns (idx)th angle \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_ab36272194ed32fa9c96a89d80cb85fb0}{const float \& \hyperlink{classhokuyo_1_1tcp__client_ab36272194ed32fa9c96a89d80cb85fb0}{get\-\_\-distance} (const size\-\_\-t idx)}\label{classhokuyo_1_1tcp__client_ab36272194ed32fa9c96a89d80cb85fb0}
+
+\begin{DoxyCompactList}\small\item\em returns (jdx)th distance \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_af9932c00ecbaede65b6a1cd60073e28c}{const size\-\_\-t \& \hyperlink{classhokuyo_1_1tcp__client_af9932c00ecbaede65b6a1cd60073e28c}{get\-\_\-frame\-\_\-count} ()}\label{classhokuyo_1_1tcp__client_af9932c00ecbaede65b6a1cd60073e28c}
+
+\begin{DoxyCompactList}\small\item\em returns the number of recieved frames \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_aa6e3e44f43147facd7414f9f0e03fc61}{const size\-\_\-t \& \hyperlink{classhokuyo_1_1tcp__client_aa6e3e44f43147facd7414f9f0e03fc61}{get\-\_\-missed\-\_\-count} ()}\label{classhokuyo_1_1tcp__client_aa6e3e44f43147facd7414f9f0e03fc61}
+
+\begin{DoxyCompactList}\small\item\em returns the number of incomplete/faulty frames \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_a6049b6fc4e800b0b580d5ce32f95e5b3}{float {\bfseries get\-\_\-max\-\_\-range} ()}\label{classhokuyo_1_1tcp__client_a6049b6fc4e800b0b580d5ce32f95e5b3}
+
+\item 
+\hypertarget{classhokuyo_1_1tcp__client_acb30c8e726535bc5467675fbeedfa4cd}{float {\bfseries get\-\_\-min\-\_\-range} ()}\label{classhokuyo_1_1tcp__client_acb30c8e726535bc5467675fbeedfa4cd}
+
+\item 
+void \hyperlink{classhokuyo_1_1tcp__client_a43b62c13de109820ab4e804efd76a95c}{start} ()
+\begin{DoxyCompactList}\small\item\em starts server communication process \end{DoxyCompactList}\item 
+void \hyperlink{classhokuyo_1_1tcp__client_ab54b7c58e9ad125e42624744e26d22d4}{stop} ()
+\begin{DoxyCompactList}\small\item\em ends server communication process \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_a43cf16989bd80fece9849064ecd284b6}{void \hyperlink{classhokuyo_1_1tcp__client_a43cf16989bd80fece9849064ecd284b6}{request} ()}\label{classhokuyo_1_1tcp__client_a43cf16989bd80fece9849064ecd284b6}
+
+\begin{DoxyCompactList}\small\item\em request a new aquisition \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_a130f57b5d6d61da417b3cbaac82c2afc}{bool \hyperlink{classhokuyo_1_1tcp__client_a130f57b5d6d61da417b3cbaac82c2afc}{avail} ()}\label{classhokuyo_1_1tcp__client_a130f57b5d6d61da417b3cbaac82c2afc}
+
+\begin{DoxyCompactList}\small\item\em returns true if 'data-\/flag' is set \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_adcb05f1bd91648a1971d55fb0f3795d7}{bool \hyperlink{classhokuyo_1_1tcp__client_adcb05f1bd91648a1971d55fb0f3795d7}{valid} ()}\label{classhokuyo_1_1tcp__client_adcb05f1bd91648a1971d55fb0f3795d7}
+
+\begin{DoxyCompactList}\small\item\em returns true if \hyperlink{classhokuyo_1_1tcp__client_a130f57b5d6d61da417b3cbaac82c2afc}{avail()} and buffer has correct number of elements \end{DoxyCompactList}\item 
+\hyperlink{classhokuyo_1_1tcp__client_a1890aa338d5513f3a7f8a8d05d2c7f18}{tcp\-\_\-client} (const char $\ast$address, const char $\ast$port, asio\-::ip\-::tcp\-::socket \&socket)
+\begin{DoxyCompactList}\small\item\em Default constructor; sets up connection to client. \end{DoxyCompactList}\item 
+\hypertarget{classhokuyo_1_1tcp__client_ad3a0b2ba1df3334d3ea0710597c7ac71}{virtual \hyperlink{classhokuyo_1_1tcp__client_ad3a0b2ba1df3334d3ea0710597c7ac71}{$\sim$tcp\-\_\-client} ()}\label{classhokuyo_1_1tcp__client_ad3a0b2ba1df3334d3ea0710597c7ac71}
+
+\begin{DoxyCompactList}\small\item\em Closes socket comms upon deletion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classhokuyo_1_1tcp__client_a265e70855ac77efd577b4a3a0ac8830f}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, \hyperlink{classhokuyo_1_1tcp__client}{tcp\-\_\-client} \&cli)}\label{classhokuyo_1_1tcp__client_a265e70855ac77efd577b4a3a0ac8830f}
+
+\item 
+void \hyperlink{classhokuyo_1_1tcp__client_af9807b92251be2aa065324c2edbd9ac3}{tcp\-\_\-client\-\_\-read\-\_\-service} (\hyperlink{classhokuyo_1_1tcp__client}{tcp\-\_\-client} $\ast$cli)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hokuyo laser client. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhokuyo_1_1tcp__client_a1890aa338d5513f3a7f8a8d05d2c7f18}{\index{hokuyo\-::tcp\-\_\-client@{hokuyo\-::tcp\-\_\-client}!tcp\-\_\-client@{tcp\-\_\-client}}
+\index{tcp\-\_\-client@{tcp\-\_\-client}!hokuyo::tcp_client@{hokuyo\-::tcp\-\_\-client}}
+\subsubsection[{tcp\-\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}hokuyo\-::tcp\-\_\-client\-::tcp\-\_\-client (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{address, }
+\item[{const char $\ast$}]{port, }
+\item[{asio\-::ip\-::tcp\-::socket \&}]{socket}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classhokuyo_1_1tcp__client_a1890aa338d5513f3a7f8a8d05d2c7f18}
+
+
+Default constructor; sets up connection to client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em address} & server's ip address \\
+\hline
+\mbox{\tt in}  & {\em port} & commincation port \\
+\hline
+ & {\em \mbox{[}in} & socket socket object thru which comms are performed \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhokuyo_1_1tcp__client_a43b62c13de109820ab4e804efd76a95c}{\index{hokuyo\-::tcp\-\_\-client@{hokuyo\-::tcp\-\_\-client}!start@{start}}
+\index{start@{start}!hokuyo::tcp_client@{hokuyo\-::tcp\-\_\-client}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void hokuyo\-::tcp\-\_\-client\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classhokuyo_1_1tcp__client_a43b62c13de109820ab4e804efd76a95c}
+
+
+starts server communication process 
+
+If a job is not active... \hypertarget{classhokuyo_1_1tcp__client_ab54b7c58e9ad125e42624744e26d22d4}{\index{hokuyo\-::tcp\-\_\-client@{hokuyo\-::tcp\-\_\-client}!stop@{stop}}
+\index{stop@{stop}!hokuyo::tcp_client@{hokuyo\-::tcp\-\_\-client}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void hokuyo\-::tcp\-\_\-client\-::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classhokuyo_1_1tcp__client_ab54b7c58e9ad125e42624744e26d22d4}
+
+
+ends server communication process 
+
+If a job has been started..
+
+Reset frame counters
+
+Cleanup the service on server side 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classhokuyo_1_1tcp__client_af9807b92251be2aa065324c2edbd9ac3}{\index{hokuyo\-::tcp\-\_\-client@{hokuyo\-::tcp\-\_\-client}!tcp\-\_\-client\-\_\-read\-\_\-service@{tcp\-\_\-client\-\_\-read\-\_\-service}}
+\index{tcp\-\_\-client\-\_\-read\-\_\-service@{tcp\-\_\-client\-\_\-read\-\_\-service}!hokuyo::tcp_client@{hokuyo\-::tcp\-\_\-client}}
+\subsubsection[{tcp\-\_\-client\-\_\-read\-\_\-service}]{\setlength{\rightskip}{0pt plus 5cm}void tcp\-\_\-client\-\_\-read\-\_\-service (
+\begin{DoxyParamCaption}
+\item[{{\bf tcp\-\_\-client} $\ast$}]{cli}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classhokuyo_1_1tcp__client_af9807b92251be2aa065324c2edbd9ac3}
+Initiate serial on server side
+
+Run service as long as thread lives
+
+Sleep
+
+Check if read requested
+
+Initiate transimission by request
+
+Data is not ready
+
+Clear old data
+
+Begin reading frame
+
+Get size field
+
+Get data bytes + convert to floats
+
+Convert byte stream to floats
+
+Push data to angle/distance vectors
+
+Check the state of transmission
+\begin{DoxyItemize}
+\item There should be no bytes avail if a request was fully processed
+\end{DoxyItemize}
+
+Data is ready 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/hokuyo\-\_\-client.\-hpp\item 
+src/hokuyo\-\_\-client.\-cpp\end{DoxyCompactItemize}

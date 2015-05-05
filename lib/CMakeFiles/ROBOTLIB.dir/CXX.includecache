@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../include/hokuyo_client.hpp
+stdio.h
+-
+stdint.h
+-
+vector
+-
+string
+-
+boost/thread.hpp
+-
+boost/asio.hpp
+-
+boost/array.hpp
+-
+
 ../include/rlib_actuator.hpp
 string
 -
@@ -17,8 +33,10 @@ string
 -
 vector
 -
-utility
+eigen3/Eigen/Core
 -
+hokuyo_client.hpp
+../include/hokuyo_client.hpp
 rlib_state.hpp
 -
 rlib_actuator.hpp
@@ -26,6 +44,14 @@ rlib_actuator.hpp
 
 ../include/rlib_state.hpp
 eigen3/Eigen/Geometry
+-
+
+/home/crrl-user1/code_projects/robotlib/src/hokuyo_client.cpp
+hokuyo_client.hpp
+/home/crrl-user1/code_projects/robotlib/src/hokuyo_client.hpp
+cmath
+-
+boost/date_time/posix_time/posix_time.hpp
 -
 
 /home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp

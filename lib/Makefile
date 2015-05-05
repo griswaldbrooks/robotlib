@@ -111,6 +111,30 @@ ROBOTLIB/fast:
 	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/build
 .PHONY : ROBOTLIB/fast
 
+src/hokuyo_client.o: src/hokuyo_client.cpp.o
+.PHONY : src/hokuyo_client.o
+
+# target to build an object file
+src/hokuyo_client.cpp.o:
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.o
+.PHONY : src/hokuyo_client.cpp.o
+
+src/hokuyo_client.i: src/hokuyo_client.cpp.i
+.PHONY : src/hokuyo_client.i
+
+# target to preprocess a source file
+src/hokuyo_client.cpp.i:
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.i
+.PHONY : src/hokuyo_client.cpp.i
+
+src/hokuyo_client.s: src/hokuyo_client.cpp.s
+.PHONY : src/hokuyo_client.s
+
+# target to generate assembly for a file
+src/hokuyo_client.cpp.s:
+	$(MAKE) -f CMakeFiles/ROBOTLIB.dir/build.make CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.s
+.PHONY : src/hokuyo_client.cpp.s
+
 src/rlib_actuator.o: src/rlib_actuator.cpp.o
 .PHONY : src/rlib_actuator.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... ROBOTLIB"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... src/hokuyo_client.o"
+	@echo "... src/hokuyo_client.i"
+	@echo "... src/hokuyo_client.s"
 	@echo "... src/rlib_actuator.o"
 	@echo "... src/rlib_actuator.i"
 	@echo "... src/rlib_actuator.s"

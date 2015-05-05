@@ -1,0 +1,73 @@
+\hypertarget{classrlib_1_1HokuyoLidarHandlerIP}{\section{rlib\-:\-:Hokuyo\-Lidar\-Handler\-I\-P Class Reference}
+\label{classrlib_1_1HokuyoLidarHandlerIP}\index{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P@{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P}}
+}
+
+
+{\ttfamily \#include $<$rlib\-\_\-sensor.\-hpp$>$}
+
+Inheritance diagram for rlib\-:\-:Hokuyo\-Lidar\-Handler\-I\-P\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrlib_1_1HokuyoLidarHandlerIP}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrlib_1_1HokuyoLidarHandlerIP_a6f771103bc0c0d5d989b8cd97ceaab54}{Hokuyo\-Lidar\-Handler\-I\-P} (char $\ast$ip, char $\ast$port)
+\begin{DoxyCompactList}\small\item\em Constructor for I\-P version of Hokoyu \hyperlink{classrlib_1_1Lidar}{Lidar} Handler. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1HokuyoLidarHandlerIP_a379dbeec9ace02bb0d4840509f009576}{void \hyperlink{classrlib_1_1HokuyoLidarHandlerIP_a379dbeec9ace02bb0d4840509f009576}{start\-Sensor} ()}\label{classrlib_1_1HokuyoLidarHandlerIP_a379dbeec9ace02bb0d4840509f009576}
+
+\begin{DoxyCompactList}\small\item\em Initiates communication with the \hyperlink{classrlib_1_1Lidar}{Lidar}. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1HokuyoLidarHandlerIP_aafe7200d26d5a38642da2d58e6ccf2b3}{void \hyperlink{classrlib_1_1HokuyoLidarHandlerIP_aafe7200d26d5a38642da2d58e6ccf2b3}{stop\-Sensor} ()}\label{classrlib_1_1HokuyoLidarHandlerIP_aafe7200d26d5a38642da2d58e6ccf2b3}
+
+\begin{DoxyCompactList}\small\item\em Terminates \hyperlink{classrlib_1_1Lidar}{Lidar} connection. \end{DoxyCompactList}\item 
+\hyperlink{classrlib_1_1SensorData}{Sensor\-Data} \hyperlink{classrlib_1_1HokuyoLidarHandlerIP_a7882c2d6edebb830a9986d202ad05b41}{get\-Data} ()
+\begin{DoxyCompactList}\small\item\em Gets range and angle data from the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a handler class derived from the \hyperlink{classrlib_1_1SensorHandler}{rlib\-::\-Sensor\-Handler} class. It is designed for use with the Hokuyo \hyperlink{classrlib_1_1Lidar}{Lidar} U\-R\-G-\/04\-L\-X-\/\-U\-G01. The \hyperlink{classrlib_1_1Lidar}{Lidar} is started using the Python lidar\-\_\-server\-\_\-tester.\-py written by Abhimanyu Ghosh. This client handler is a wrapper class for the client library hokuyo\-\_\-client.\-cpp written by Brian Cairl. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrlib_1_1HokuyoLidarHandlerIP_a6f771103bc0c0d5d989b8cd97ceaab54}{\index{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P@{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P}!Hokuyo\-Lidar\-Handler\-I\-P@{Hokuyo\-Lidar\-Handler\-I\-P}}
+\index{Hokuyo\-Lidar\-Handler\-I\-P@{Hokuyo\-Lidar\-Handler\-I\-P}!rlib::HokuyoLidarHandlerIP@{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P}}
+\subsubsection[{Hokuyo\-Lidar\-Handler\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P\-::\-Hokuyo\-Lidar\-Handler\-I\-P (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ip, }
+\item[{char $\ast$}]{port}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1HokuyoLidarHandlerIP_a6f771103bc0c0d5d989b8cd97ceaab54}
+
+
+Constructor for I\-P version of Hokoyu \hyperlink{classrlib_1_1Lidar}{Lidar} Handler. 
+
+The constructor for the handler needs the I\-P address and port number that the \hyperlink{classrlib_1_1Lidar}{Lidar} is running on. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ip} & This is the I\-P address of the computer that the \hyperlink{classrlib_1_1Lidar}{Lidar} is connected to. \\
+\hline
+\mbox{\tt in}  & {\em port} & This is the port number of the \hyperlink{classrlib_1_1Lidar}{Lidar} on the computer. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1HokuyoLidarHandlerIP_a7882c2d6edebb830a9986d202ad05b41}{\index{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P@{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!rlib::HokuyoLidarHandlerIP@{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensor\-Data} rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1HokuyoLidarHandlerIP_a7882c2d6edebb830a9986d202ad05b41}
+
+
+Gets range and angle data from the sensor. 
+
+Requests new sensor data from the \hyperlink{classrlib_1_1Lidar}{Lidar}. This is a blocking function. \begin{DoxyReturn}{Returns}
+\hyperlink{classrlib_1_1SensorData}{Sensor\-Data} The range and angle data packed into the \hyperlink{classrlib_1_1SensorData}{rlib\-::\-Sensor\-Data} format. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/rlib\-\_\-sensor.\-hpp\end{DoxyCompactItemize}

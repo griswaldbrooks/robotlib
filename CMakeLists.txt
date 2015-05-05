@@ -17,6 +17,7 @@ set(_libsrcs
 	src/rlib_actuator.cpp
 	src/rlib_sensor.cpp
 	src/rlib_nao.cpp
+	src/hokuyo_client.cpp
 	)
 
 # Build these libraries
