@@ -1,6 +1,15 @@
 \hypertarget{classrlib_1_1Actuator}{\section{rlib\-:\-:Actuator Class Reference}
 \label{classrlib_1_1Actuator}\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}}
 }
+
+
+Abstract class for implementing actuators.  
+
+
+
+
+{\ttfamily \#include $<$rlib\-\_\-actuator.\-hpp$>$}
+
 Inheritance diagram for rlib\-:\-:Actuator\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,43 +19,204 @@ Inheritance diagram for rlib\-:\-:Actuator\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1Actuator_a4586932cf12e921639b5186b12f87866}{{\bfseries Actuator} (const char $\ast$name)}\label{classrlib_1_1Actuator_a4586932cf12e921639b5186b12f87866}
-
-\item 
-\hypertarget{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}{virtual void {\bfseries set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} pose)=0}\label{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}
-
-\item 
-\hypertarget{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}{virtual void {\bfseries set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} velocity)=0}\label{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}
-
-\item 
-\hypertarget{classrlib_1_1Actuator_af4694ce3e4474e27bda1ed39cc048b6e}{std\-::string {\bfseries get\-Name} ()}\label{classrlib_1_1Actuator_af4694ce3e4474e27bda1ed39cc048b6e}
-
-\item 
-\hypertarget{classrlib_1_1Actuator_aaba68f5222df9f7878538b36daad068f}{void {\bfseries set\-Parent} (\hyperlink{classrlib_1_1Actuator}{Actuator} $\ast$parent)}\label{classrlib_1_1Actuator_aaba68f5222df9f7878538b36daad068f}
-
-\end{DoxyCompactItemize}
+\hyperlink{classrlib_1_1Actuator_a4586932cf12e921639b5186b12f87866}{Actuator} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Constructor for the actuator class. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}{set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} \hyperlink{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}{pose})=0
+\begin{DoxyCompactList}\small\item\em Sets the pose of the actuator. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}{set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} \hyperlink{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}{velocity})=0
+\begin{DoxyCompactList}\small\item\em Sets the velocity of the actuator. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Actuator_aaba68f5222df9f7878538b36daad068f}{set\-Parent} (\hyperlink{classrlib_1_1Actuator}{Actuator} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Assigns the actuator parent in the kinematic chain. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Actuator_a9057584b1c8855a525816f9a1a973da4}{set\-Child} (\hyperlink{classrlib_1_1Actuator}{Actuator} $\ast$child)
+\begin{DoxyCompactList}\small\item\em Assigns the child actuator in the kinematic chain. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Actuator_a138ade22d9534a93780f97b5c1af07a6}{set\-Frame} (\hyperlink{classrlib_1_1Transform}{Transform} tf)
+\begin{DoxyCompactList}\small\item\em Sets the coordinate transformation between the parent and the sensor. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Actuator_af3c3a5a5de2ab54d6b06fe223ec5e7e6}{set\-Handler} (\hyperlink{classrlib_1_1ActuatorHandler}{Actuator\-Handler} $\ast$handler)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{classrlib_1_1ActuatorHandler}{Actuator\-Handler} for this sensor. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classrlib_1_1Actuator_af4694ce3e4474e27bda1ed39cc048b6e}{get\-Name} ()
+\begin{DoxyCompactList}\small\item\em Gets the actuator unique identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}{\hyperlink{classrlib_1_1Pose}{Pose} {\bfseries pose}}\label{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}
-
+\hyperlink{classrlib_1_1Pose}{Pose} \hyperlink{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}{pose}
 \item 
-\hypertarget{classrlib_1_1Actuator_ae0dd994c7e78e9db5580ea23d1361f4e}{\hyperlink{classrlib_1_1Pose}{Pose} {\bfseries pos\-Max}}\label{classrlib_1_1Actuator_ae0dd994c7e78e9db5580ea23d1361f4e}
-
+\hyperlink{classrlib_1_1Pose}{Pose} \hyperlink{classrlib_1_1Actuator_ae0dd994c7e78e9db5580ea23d1361f4e}{pos\-Max}
 \item 
-\hypertarget{classrlib_1_1Actuator_a4ab8363fb4cfe849f1bb89720387d222}{\hyperlink{classrlib_1_1Pose}{Pose} {\bfseries pos\-Min}}\label{classrlib_1_1Actuator_a4ab8363fb4cfe849f1bb89720387d222}
-
+\hyperlink{classrlib_1_1Pose}{Pose} \hyperlink{classrlib_1_1Actuator_a4ab8363fb4cfe849f1bb89720387d222}{pos\-Min}
 \item 
-\hypertarget{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}{\hyperlink{classrlib_1_1Vel}{Vel} {\bfseries velocity}}\label{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}
-
+\hyperlink{classrlib_1_1Vel}{Vel} \hyperlink{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}{velocity}
 \item 
-\hypertarget{classrlib_1_1Actuator_a54b50a2b0f4cb61a4e5c70fa72a126dc}{\hyperlink{classrlib_1_1Vel}{Vel} {\bfseries vel\-Max}}\label{classrlib_1_1Actuator_a54b50a2b0f4cb61a4e5c70fa72a126dc}
-
+\hyperlink{classrlib_1_1Vel}{Vel} \hyperlink{classrlib_1_1Actuator_a54b50a2b0f4cb61a4e5c70fa72a126dc}{vel\-Max}
 \item 
-\hypertarget{classrlib_1_1Actuator_ad8d95d72f27494890e16ed4ab6045f20}{\hyperlink{classrlib_1_1Vel}{Vel} {\bfseries vel\-Min}}\label{classrlib_1_1Actuator_ad8d95d72f27494890e16ed4ab6045f20}
-
+\hyperlink{classrlib_1_1Vel}{Vel} \hyperlink{classrlib_1_1Actuator_ad8d95d72f27494890e16ed4ab6045f20}{vel\-Min}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Abstract class for implementing actuators. 
+
+\hyperlink{classrlib_1_1Actuator}{Actuator} objects are used to command actuators to poses. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrlib_1_1Actuator_a4586932cf12e921639b5186b12f87866}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!Actuator@{Actuator}}
+\index{Actuator@{Actuator}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{Actuator}]{\setlength{\rightskip}{0pt plus 5cm}rlib\-::\-Actuator\-::\-Actuator (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Actuator_a4586932cf12e921639b5186b12f87866}
+
+
+Constructor for the actuator class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name for the actuator, used as a unique identifier. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1Actuator_af4694ce3e4474e27bda1ed39cc048b6e}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string rlib\-::\-Actuator\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Actuator_af4694ce3e4474e27bda1ed39cc048b6e}
+
+
+Gets the actuator unique identifier. 
+
+\begin{DoxyReturn}{Returns}
+The name of the actuator. 
+\end{DoxyReturn}
+\hypertarget{classrlib_1_1Actuator_a9057584b1c8855a525816f9a1a973da4}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!set\-Child@{set\-Child}}
+\index{set\-Child@{set\-Child}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{set\-Child}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Actuator\-::set\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Actuator} $\ast$}]{child}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Actuator_a9057584b1c8855a525816f9a1a973da4}
+
+
+Assigns the child actuator in the kinematic chain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em child} & Pointer to the child actuator. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1Actuator_a138ade22d9534a93780f97b5c1af07a6}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!set\-Frame@{set\-Frame}}
+\index{set\-Frame@{set\-Frame}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{set\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Actuator\-::set\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Transform}}]{tf}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Actuator_a138ade22d9534a93780f97b5c1af07a6}
+
+
+Sets the coordinate transformation between the parent and the sensor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tf} & The tranformation that brings the parent frame to the sensor frame. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1Actuator_af3c3a5a5de2ab54d6b06fe223ec5e7e6}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!set\-Handler@{set\-Handler}}
+\index{set\-Handler@{set\-Handler}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{set\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Actuator\-::set\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Actuator\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Actuator_af3c3a5a5de2ab54d6b06fe223ec5e7e6}
+
+
+Sets the \hyperlink{classrlib_1_1ActuatorHandler}{Actuator\-Handler} for this sensor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em handler} & The \hyperlink{classrlib_1_1ActuatorHandler}{Actuator\-Handler} object that interacts with the physical actuator. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1Actuator_aaba68f5222df9f7878538b36daad068f}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!set\-Parent@{set\-Parent}}
+\index{set\-Parent@{set\-Parent}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{set\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Actuator\-::set\-Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Actuator} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Actuator_aaba68f5222df9f7878538b36daad068f}
+
+
+Assigns the actuator parent in the kinematic chain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em parent} & Pointer to the parent actuator. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}virtual void rlib\-::\-Actuator\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Pose}}]{pose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}
+
+
+Sets the pose of the actuator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The pose of the actuator with respect to its origin. If the pose command contains elements outside the pose limits of the actuator then the actuator will only be commanded to setpoints within those limits. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classrlib_1_1MobileBase_ab384dfccdcadfdfdcb4682b7361502f0}{rlib\-::\-Mobile\-Base}, and \hyperlink{classrlib_1_1NaoBasicWalker_a282dc6e13898cb72b01fbf5b133efeed}{rlib\-::\-Nao\-Basic\-Walker}.
+
+\hypertarget{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!set\-Velocity@{set\-Velocity}}
+\index{set\-Velocity@{set\-Velocity}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{set\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual void rlib\-::\-Actuator\-::set\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Vel}}]{velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}
+
+
+Sets the velocity of the actuator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The velocity of the actuator in the local frame. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classrlib_1_1MobileBase_a0d299cb807df63bd9cf9b259d4ce84fe}{rlib\-::\-Mobile\-Base}, and \hyperlink{classrlib_1_1NaoBasicWalker_adb9b1a9c71e0558ba57384f6b8385e1a}{rlib\-::\-Nao\-Basic\-Walker}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!pose@{pose}}
+\index{pose@{pose}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{pose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pose} rlib\-::\-Actuator\-::pose\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}
+6\-D description of actuator position with respect to the actuator origin. \hypertarget{classrlib_1_1Actuator_ae0dd994c7e78e9db5580ea23d1361f4e}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!pos\-Max@{pos\-Max}}
+\index{pos\-Max@{pos\-Max}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{pos\-Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pose} rlib\-::\-Actuator\-::pos\-Max\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrlib_1_1Actuator_ae0dd994c7e78e9db5580ea23d1361f4e}
+\hyperlink{classrlib_1_1Pose}{Pose} maximum limits for the actuator. \hypertarget{classrlib_1_1Actuator_a4ab8363fb4cfe849f1bb89720387d222}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!pos\-Min@{pos\-Min}}
+\index{pos\-Min@{pos\-Min}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{pos\-Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pose} rlib\-::\-Actuator\-::pos\-Min\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrlib_1_1Actuator_a4ab8363fb4cfe849f1bb89720387d222}
+\hyperlink{classrlib_1_1Pose}{Pose} minimum limits for the actuator. \hypertarget{classrlib_1_1Actuator_a54b50a2b0f4cb61a4e5c70fa72a126dc}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!vel\-Max@{vel\-Max}}
+\index{vel\-Max@{vel\-Max}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{vel\-Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vel} rlib\-::\-Actuator\-::vel\-Max\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrlib_1_1Actuator_a54b50a2b0f4cb61a4e5c70fa72a126dc}
+Velocity maximum limits for the actuator. \hypertarget{classrlib_1_1Actuator_ad8d95d72f27494890e16ed4ab6045f20}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!vel\-Min@{vel\-Min}}
+\index{vel\-Min@{vel\-Min}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{vel\-Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vel} rlib\-::\-Actuator\-::vel\-Min\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrlib_1_1Actuator_ad8d95d72f27494890e16ed4ab6045f20}
+Velocity minimum limits for the actuator. \hypertarget{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}{\index{rlib\-::\-Actuator@{rlib\-::\-Actuator}!velocity@{velocity}}
+\index{velocity@{velocity}!rlib::Actuator@{rlib\-::\-Actuator}}
+\subsubsection[{velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vel} rlib\-::\-Actuator\-::velocity\hspace{0.3cm}{\ttfamily [protected]}}}\label{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}
+6\-D description of actuator velocity with respect to the actuator origin. 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

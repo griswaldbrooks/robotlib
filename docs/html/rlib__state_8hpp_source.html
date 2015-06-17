@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,54 +113,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>rlib{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// Class for defining velocities.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrlib_1_1Vel.html">Vel</a>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">// Linear velocities in m/s</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">float</span> vx, vy, vz;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// Angular velocities in rad/s</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">float</span> wx, wy, wz;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Class for defining pose.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classrlib_1_1Pose.html">   35</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrlib_1_1Pose.html">Pose</a>{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// Default constructor</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classrlib_1_1Pose.html">Pose</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Constructor with initial values as xyz and rpy</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">// rpy is Roll, Pitch, Yaw, or Tait-Brian angles. Roll is about the</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// x axis, then pitch is about the new y axis, and yaw is about the final</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// z axis.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classrlib_1_1Pose.html">Pose</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y = 0, <span class="keywordtype">float</span> z = 0, <span class="keywordtype">float</span> roll = 0, <span class="keywordtype">float</span> pitch = 0, <span class="keywordtype">float</span> yaw = 0);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// Set linear pose.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> setXYZ(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Set angular position by setting rpy as in the constructor.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> setRPY(<span class="keywordtype">float</span> roll, <span class="keywordtype">float</span> pitch, <span class="keywordtype">float</span> yaw);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// Linear pose represented as x, y, z.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Eigen::Translation&lt;float, 3&gt; p;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// Angular pose represented as w, x, y, z.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        Eigen::Quaternion&lt;float&gt; q;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Class for defining rigid body transformations.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classrlib_1_1Transform.html">   55</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrlib_1_1Transform.html">Transform</a>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// Rigid body relationships are represented as a 4x4 Homogeneous</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Transformation matrix.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        Eigen::Transform&lt;float, 3, Eigen::Affine&gt; T;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classrlib_1_1Transform_html"><div class="ttname"><a href="classrlib_1_1Transform.html">rlib::Transform</a></div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:55</div></div>
-<div class="ttc" id="classrlib_1_1Pose_html"><div class="ttname"><a href="classrlib_1_1Pose.html">rlib::Pose</a></div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:35</div></div>
-<div class="ttc" id="classrlib_1_1Vel_html"><div class="ttname"><a href="classrlib_1_1Vel.html">rlib::Vel</a></div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:26</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrlib_1_1Vel.html">Vel</a>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html#aba9035c6e774edd37f2421ec376bb8f3">   30</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classrlib_1_1Vel.html#aba9035c6e774edd37f2421ec376bb8f3">vx</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html#acb4d80d6a58e1813359f9931d2fc6c9e">   31</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classrlib_1_1Vel.html#acb4d80d6a58e1813359f9931d2fc6c9e">vy</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html#aab3819a2079bb4654939da51cf896af3">   32</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classrlib_1_1Vel.html#aab3819a2079bb4654939da51cf896af3">vz</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html#adc2bc037dd0c69f0aaa972a41b8af55c">   33</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classrlib_1_1Vel.html#adc2bc037dd0c69f0aaa972a41b8af55c">wx</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html#a40c6bb36dcb99cd88214e92c8169e7b1">   34</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classrlib_1_1Vel.html#a40c6bb36dcb99cd88214e92c8169e7b1">wy</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classrlib_1_1Vel.html#a7f1cf4b7d0dba121ec54d0011eb1e4d5">   35</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classrlib_1_1Vel.html#a7f1cf4b7d0dba121ec54d0011eb1e4d5">wz</a>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classrlib_1_1Pose.html">   44</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrlib_1_1Pose.html">Pose</a>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classrlib_1_1Pose.html#a0c47aadc845fe51dc9c8657920231c44">Pose</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classrlib_1_1Pose.html#a0c47aadc845fe51dc9c8657920231c44">Pose</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y = 0, <span class="keywordtype">float</span> z = 0, <span class="keywordtype">float</span> roll = 0, <span class="keywordtype">float</span> pitch = 0, <span class="keywordtype">float</span> yaw = 0);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrlib_1_1Pose.html#a5b2693a81537396e831788fb4597c908">setXYZ</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrlib_1_1Pose.html#a4342dd9f96dc8efe40fca92f8a6b31be">setRPY</a>(<span class="keywordtype">float</span> roll, <span class="keywordtype">float</span> pitch, <span class="keywordtype">float</span> yaw);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classrlib_1_1Pose.html#a79943a3bc939401f14ab8feadc6f9fb0">   86</a></span>&#160;        Eigen::Translation&lt;float, 3&gt; <a class="code" href="classrlib_1_1Pose.html#a79943a3bc939401f14ab8feadc6f9fb0">p</a>;     </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classrlib_1_1Pose.html#ac598a727181b9ffbe5ac865239390437">   87</a></span>&#160;        Eigen::Quaternion&lt;float&gt; <a class="code" href="classrlib_1_1Pose.html#ac598a727181b9ffbe5ac865239390437">q</a>;         </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classrlib_1_1Transform.html">   93</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classrlib_1_1Transform.html">Transform</a>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classrlib_1_1Transform.html#a38135d56804225fa5e1bac5a5c6b3d9d">   95</a></span>&#160;        Eigen::Transform&lt;float, 3, Eigen::Affine&gt; <a class="code" href="classrlib_1_1Transform.html#a38135d56804225fa5e1bac5a5c6b3d9d">T</a>; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    };</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classrlib_1_1Vel_html_adc2bc037dd0c69f0aaa972a41b8af55c"><div class="ttname"><a href="classrlib_1_1Vel.html#adc2bc037dd0c69f0aaa972a41b8af55c">rlib::Vel::wx</a></div><div class="ttdeci">float wx</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:33</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html_a5b2693a81537396e831788fb4597c908"><div class="ttname"><a href="classrlib_1_1Pose.html#a5b2693a81537396e831788fb4597c908">rlib::Pose::setXYZ</a></div><div class="ttdeci">void setXYZ(float x, float y, float z)</div><div class="ttdoc">Set linear pose. </div><div class="ttdef"><b>Definition:</b> rlib_state.cpp:30</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html_aab3819a2079bb4654939da51cf896af3"><div class="ttname"><a href="classrlib_1_1Vel.html#aab3819a2079bb4654939da51cf896af3">rlib::Vel::vz</a></div><div class="ttdeci">float vz</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:32</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html_a4342dd9f96dc8efe40fca92f8a6b31be"><div class="ttname"><a href="classrlib_1_1Pose.html#a4342dd9f96dc8efe40fca92f8a6b31be">rlib::Pose::setRPY</a></div><div class="ttdeci">void setRPY(float roll, float pitch, float yaw)</div><div class="ttdoc">Set angular position by setting rpy as in the constructor. </div><div class="ttdef"><b>Definition:</b> rlib_state.cpp:37</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html_ac598a727181b9ffbe5ac865239390437"><div class="ttname"><a href="classrlib_1_1Pose.html#ac598a727181b9ffbe5ac865239390437">rlib::Pose::q</a></div><div class="ttdeci">Eigen::Quaternion&lt; float &gt; q</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:87</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html_a40c6bb36dcb99cd88214e92c8169e7b1"><div class="ttname"><a href="classrlib_1_1Vel.html#a40c6bb36dcb99cd88214e92c8169e7b1">rlib::Vel::wy</a></div><div class="ttdeci">float wy</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:34</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html_a7f1cf4b7d0dba121ec54d0011eb1e4d5"><div class="ttname"><a href="classrlib_1_1Vel.html#a7f1cf4b7d0dba121ec54d0011eb1e4d5">rlib::Vel::wz</a></div><div class="ttdeci">float wz</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:35</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html_a79943a3bc939401f14ab8feadc6f9fb0"><div class="ttname"><a href="classrlib_1_1Pose.html#a79943a3bc939401f14ab8feadc6f9fb0">rlib::Pose::p</a></div><div class="ttdeci">Eigen::Translation&lt; float, 3 &gt; p</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:86</div></div>
+<div class="ttc" id="classrlib_1_1Transform_html"><div class="ttname"><a href="classrlib_1_1Transform.html">rlib::Transform</a></div><div class="ttdoc">Class for defining rigid body transformations. </div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:93</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html_a0c47aadc845fe51dc9c8657920231c44"><div class="ttname"><a href="classrlib_1_1Pose.html#a0c47aadc845fe51dc9c8657920231c44">rlib::Pose::Pose</a></div><div class="ttdeci">Pose()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> rlib_state.cpp:16</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html_acb4d80d6a58e1813359f9931d2fc6c9e"><div class="ttname"><a href="classrlib_1_1Vel.html#acb4d80d6a58e1813359f9931d2fc6c9e">rlib::Vel::vy</a></div><div class="ttdeci">float vy</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:31</div></div>
+<div class="ttc" id="classrlib_1_1Transform_html_a38135d56804225fa5e1bac5a5c6b3d9d"><div class="ttname"><a href="classrlib_1_1Transform.html#a38135d56804225fa5e1bac5a5c6b3d9d">rlib::Transform::T</a></div><div class="ttdeci">Eigen::Transform&lt; float, 3, Eigen::Affine &gt; T</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:95</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html"><div class="ttname"><a href="classrlib_1_1Pose.html">rlib::Pose</a></div><div class="ttdoc">Class for defining pose. </div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:44</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html"><div class="ttname"><a href="classrlib_1_1Vel.html">rlib::Vel</a></div><div class="ttdoc">Class for defining velocities. </div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:28</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html_aba9035c6e774edd37f2421ec376bb8f3"><div class="ttname"><a href="classrlib_1_1Vel.html#aba9035c6e774edd37f2421ec376bb8f3">rlib::Vel::vx</a></div><div class="ttdeci">float vx</div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:37 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:12 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

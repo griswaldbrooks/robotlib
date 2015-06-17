@@ -5,17 +5,32 @@ CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.o: ../include/hokuyo_client.hpp
 CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.o: ../src/hokuyo_client.cpp
 
 CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o: ../include/rlib_actuator.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o: ../include/rlib_controller.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o: ../include/rlib_state.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o: ../src/rlib_actuator.cpp
 
+CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/hokuyo_client.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_actuator.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_controller.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_nao.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_observer.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_robot.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_sensor.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../include/rlib_state.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o: ../src/rlib_nao.cpp
 
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/hokuyo_client.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/rlib_actuator.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/rlib_controller.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/rlib_observer.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/rlib_robot.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/rlib_sensor.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../include/rlib_state.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o: ../src/rlib_robot.cpp
+
 CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/hokuyo_client.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_actuator.hpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_controller.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_sensor.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../include/rlib_state.hpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o: ../src/rlib_sensor.cpp

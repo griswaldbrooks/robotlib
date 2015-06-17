@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,18 +84,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1SensorHandler.html">SensorHandler</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1SensorHandler.html">SensorHandler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classrlib_1_1SensorHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">rlib::SensorHandler Class Reference</div>  </div>
+<div class="title">rlib::SensorHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Handler Abstract Class ***///  
+<p>Abstract class for all <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Handler objects.  
  <a href="classrlib_1_1SensorHandler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a>&gt;</code></p>
@@ -105,18 +106,87 @@ Inheritance diagram for rlib::SensorHandler:</div>
  <div class="center">
   <img src="classrlib_1_1SensorHandler.png" usemap="#rlib::SensorHandler_map" alt=""/>
   <map id="rlib::SensorHandler_map" name="rlib::SensorHandler_map">
-<area href="classrlib_1_1HokuyoLidarHandlerIP.html" alt="rlib::HokuyoLidarHandlerIP" shape="rect" coords="0,56,164,80"/>
+<area href="classrlib_1_1HokuyoLidarHandlerIP.html" title="Hokuyo Lidar Handler class using IP connected Lidar. " alt="rlib::HokuyoLidarHandlerIP" shape="rect" coords="0,56,164,80"/>
 </map>
  </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ace170c82c91c36497a1a486979ebba71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1SensorHandler.html#ace170c82c91c36497a1a486979ebba71">SensorHandler</a> ()</td></tr>
+<tr class="memdesc:ace170c82c91c36497a1a486979ebba71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Handler constructor.  <a href="#ace170c82c91c36497a1a486979ebba71">More...</a><br/></td></tr>
+<tr class="separator:ace170c82c91c36497a1a486979ebba71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b4756a0838c3c26b2c6d71858c588f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b4756a0838c3c26b2c6d71858c588f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1SensorHandler.html#a48b4756a0838c3c26b2c6d71858c588f">startSensor</a> ()=0</td></tr>
+<tr class="memdesc:a48b4756a0838c3c26b2c6d71858c588f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and starts sensor. <br/></td></tr>
+<tr class="separator:a48b4756a0838c3c26b2c6d71858c588f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed535cfe7182f006c9df0f02b0a48dde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed535cfe7182f006c9df0f02b0a48dde"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1SensorHandler.html#aed535cfe7182f006c9df0f02b0a48dde">stopSensor</a> ()=0</td></tr>
+<tr class="memdesc:aed535cfe7182f006c9df0f02b0a48dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops sensor. <br/></td></tr>
+<tr class="separator:aed535cfe7182f006c9df0f02b0a48dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9c3e855f436aab794969b3b5cc3193"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrlib_1_1SensorData.html">SensorData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1SensorHandler.html#a7f9c3e855f436aab794969b3b5cc3193">getData</a> ()=0</td></tr>
+<tr class="memdesc:a7f9c3e855f436aab794969b3b5cc3193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data from the sensor.  <a href="#a7f9c3e855f436aab794969b3b5cc3193">More...</a><br/></td></tr>
+<tr class="separator:a7f9c3e855f436aab794969b3b5cc3193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Handler Abstract Class ***/// </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Abstract class for all <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Handler objects. </p>
+<p>This is the abstract class for building all <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Handlers. These objects are meant to deal with the implementation details of actually getting sensor data. The <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Handler is kept by the <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> object and uses it to get sensor data. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ace170c82c91c36497a1a486979ebba71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rlib::SensorHandler::SensorHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default Handler constructor. </p>
+<p>*** <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Handler Class ***/// </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7f9c3e855f436aab794969b3b5cc3193"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classrlib_1_1SensorData.html">SensorData</a>* rlib::SensorHandler::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets data from the sensor. </p>
+<p>Requests new data from the sensor. This is a blocking function. </p>
+<dl class="section return"><dt>Returns</dt><dd>The sensor data packed into the <a class="el" href="classrlib_1_1SensorData.html" title="SensorData class for getting data from Sensors. ">rlib::SensorData</a> format. </dd></dl>
+
+<p>Implemented in <a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#af1b24513e31b16fb97b9a9124f29bc40">rlib::HokuyoLidarHandlerIP</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a></li>
+<li>src/rlib_sensor.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:39 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

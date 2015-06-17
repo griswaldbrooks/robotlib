@@ -28,39 +28,152 @@
 
 // Robot lib Includes
 #include <rlib_state.hpp>
+#include <rlib_controller.hpp>
 
 namespace rlib{
 
-	// Class for building basic actuators.
+	/*!
+	* \brief Abstract handler class for implementing actuators.
+	*/
+	/** ActuatorHandler objects are used by the Actuator class for commanding
+	* actuator hardware.
+	*/
+	class ActuatorHandler{
+	public:
+		/*! \brief Default Handler constructor. */
+		ActuatorHandler();
+		
+		/*!
+		* \brief Initializes and starts actuator.
+		*/
+		virtual void start() = 0;
+
+		/*!	
+		* \brief Stops actuator.
+		*/
+		virtual void stop() = 0;
+
+		/*!	
+		* \brief Commands actuator to a position.
+		*
+		* Commands actuator to a position setpoint.
+		* \param[in] pose 	The commanded actuator pose.
+		* \return 			The pose command sent to the actuator.
+		*/
+		/**
+		* If the pose command contains elements outside the limits of the actuator
+		* then the actuator will only be commanded to setpoints within those limits.
+		*/
+		virtual Pose setPosition(Pose pose) = 0;
+
+		/*!	
+		* \brief Commands actuator to a velocity.
+		*
+		* Commands actuator to a velocity setpoint.
+		* \param[in] vel 	The commanded actuator velocity.
+		* \return 			The velocity command sent to the actuator.
+		*/
+		/**
+		* If the velocity command contains elements outside the limits of the actuator
+		* then the actuator will only be commanded to setpoints within those limits.
+		*/
+		virtual Vel setVelocity(Vel velocity) = 0;
+
+		/*!
+		* \brief Sets the pose and velocity limits of the actuator.
+		* \param[in] poseMin	The minimum pose of the actuator.
+		* \param[in] poseMax	The maximum pose of the actuator.
+		* \param[in] velMin	 	The minimum velocity of the actuator.
+		* \param[in] velMax 	The maximum velocity of the actuator.
+		* \return 				True if the limit are valid.
+		*/
+		virtual bool setLimits(Pose poseMin, Pose poseMax, Vel velMin, Vel velMax) = 0;
+
+	private:
+		Pose _poseMax;	/**< Pose maximum limits for the actuator. */
+		Pose _poseMin;	/**< Pose minimum limits for the actuator. */
+		Vel _velMax;		/**< Velocity maximum limits for the actuator. */ 
+		Vel _velMin;		/**< Velocity minimum limits for the actuator. */
+	};
+
+	/*!
+	* \brief Abstract class for implementing actuators.
+	*/
+	/** Actuator objects are used to command actuators to poses.
+	*/
 	class Actuator{
 	public:	
-		// Constructor for the actuator class.
+		/*!
+		* \brief Constructor for the actuator class.
+		* \param[in] name 		The name for the actuator, used as a unique identifier.
+		*/
 		Actuator(const char * name);
-		// Set the pose of the actuator with respect to its origin.
-		virtual void setPosition(Pose pose) = 0;
-		// Set the velocity of the actuator in the local frame.
-		virtual void setVelocity(Vel velocity) = 0;
-		// Return name of actuator
-		std::string getName();
-		// Set the parent actuator
-		void setParent(Actuator* parent);
-	protected:
-		// 6D description of actuator position with respect to the actuator origin.
-		// (Do pose maxes and mins make sense?)
-		Pose pose, posMax, posMin;
-		// 6D description of actuator velocity with respect to the actuator origin.
-		Vel velocity, velMax, velMin;
-	private:
-		// Unique identifier for the actuator
-		std::string _name;
-		// The actuator object that this actuator is a child of.
-		Actuator* _parent;
-		// The actuator object that is the child of this one.
-		Actuator* _child;
-		// Transformation that the parent must do on its origin to
-		// reach the origin of the child (the child is this actuator).
-		Transform _tf;
 		
+		/*!
+		* \brief Sets the pose of the actuator.
+		* \param[in] pose 	 The pose of the actuator with respect to its origin.
+		*/
+		virtual void setPosition(Pose pose);
+
+		/*!
+		* \brief Sets the velocity of the actuator.
+		* \param[in] pose 	 The velocity of the actuator in the local frame.
+		*/
+		virtual void setVelocity(Vel velocity);
+
+		/*!
+		* \brief Assigns the child actuator in the kinematic chain.
+		* \param[in] child 	Pointer to the child actuator.
+		* \param[in] tf 	The coordinate transformation that beings the parent
+		*					frame to the child frame.
+		* \return 			True if the actuator could be attached. 
+		*					False if it could not. Likely because it has not been
+		*					properly detached.
+		*/
+		virtual bool attachActuator(Actuator* child, Transform tf);
+
+		/*!
+		* \brief Disassociate the child actuator from the parent.
+		*/
+		virtual void detachActuator();
+
+		/*!
+		* \brief Get pointer to the child actuator.
+		* \return Actuator pointer to the child actuator.
+		*/
+		// Maybe replace this with iterator?
+		Actuator* next();
+
+		/*!
+		* \brief Says if Actuator is associated with another object.
+		* \return 		True if it has an association, False otherwise.
+		*/
+		bool isAttached();
+
+		/*!
+		* \brief Sets the ActuatorHandler for this actuator.
+		* \param[in] handler 		The ActuatorHandler object that interacts with the physical actuator.
+		*/
+		void attachHandler(ActuatorHandler* handler);
+
+		/*!
+		* \brief Gets the actuator unique identifier.
+		* \return The name of the actuator.
+		*/
+		std::string getName();
+
+	protected:
+		Actuator* _parent; 	/**< The actuator object that this actuator is a child of. */
+		Actuator* _child; 	/**< The actuator object that is the child of this one. */
+		Transform _tf; 		/**< Transformation that the parent must do on its origin to
+										reach the origin of the child (the child is this actuator). */
+	private:
+		Pose _pose; 		/**< 6D description of actuator position with respect to the actuator origin. */
+		Vel _velocity; 		/**< 6D description of actuator velocity with respect to the actuator origin. */
+	
+		std::string _name; 			/**< Unique identifier for the actuator. */
+		Controller* _controller; 	/**< Object that controls the actuator. */
+		ActuatorHandler* _handler; 	/**< Implementation (Bridge) object for interfacing with the physical actuator.*/	
 	};
 
 	/* Some basic derivatives */

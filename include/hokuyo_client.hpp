@@ -3,13 +3,13 @@
 #ifndef HOKUYO_CLIENT_HPP
 #define HOKUYO_CLIENT_HPP 1
 
-#include<stdio.h>
-#include<stdint.h>
-#include<vector>
-#include<string>
-#include<boost/thread.hpp>
-#include<boost/asio.hpp>
-#include<boost/array.hpp>
+#include <stdio.h>
+#include <stdint.h>
+#include <vector>
+#include <string>
+#include <boost/thread.hpp>
+#include <boost/asio.hpp>
+#include <boost/array.hpp>
 
 
 

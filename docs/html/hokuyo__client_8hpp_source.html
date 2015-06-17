@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,13 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HOKUYO_CLIENT_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HOKUYO_CLIENT_HPP 1</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&lt;boost/thread.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;boost/asio.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;boost/array.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;boost/thread.hpp&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;boost/asio.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;boost/array.hpp&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
@@ -209,14 +209,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};<span class="comment">//hokuyo</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespacehokuyo_1_1utils_html_a805379cd7e9926d418444637e01a34d4"><div class="ttname"><a href="namespacehokuyo_1_1utils.html#a805379cd7e9926d418444637e01a34d4">hokuyo::utils::to_cart</a></div><div class="ttdeci">void to_cart(tcp_client &amp;hok, std::vector&lt; pointTy &gt; &amp;_out)</div><div class="ttdoc">pointTy must have public members &#39;x&#39; and &#39;y&#39; </div><div class="ttdef"><b>Definition:</b> hokuyo_client.hpp:97</div></div>
-<div class="ttc" id="classhokuyo_1_1tcp__client_html_a3b0554fedfa5db82eb7dd98321e84c54"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html#a3b0554fedfa5db82eb7dd98321e84c54">hokuyo::tcp_client::get_angles</a></div><div class="ttdeci">const fbuffer &amp; get_angles()</div><div class="ttdoc">returns vector of angle (valid if avail()==true) </div><div class="ttdef"><b>Definition:</b> hokuyo_client.cpp:200</div></div>
+<div class="ttc" id="classhokuyo_1_1tcp__client_html_a3b0554fedfa5db82eb7dd98321e84c54"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html#a3b0554fedfa5db82eb7dd98321e84c54">hokuyo::tcp_client::get_angles</a></div><div class="ttdeci">const fbuffer &amp; get_angles()</div><div class="ttdoc">returns vector of angle (valid if avail()==true) </div><div class="ttdef"><b>Definition:</b> hokuyo_client.cpp:201</div></div>
 <div class="ttc" id="classhokuyo_1_1tcp__client_html"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html">hokuyo::tcp_client</a></div><div class="ttdoc">Hokuyo laser client. </div><div class="ttdef"><b>Definition:</b> hokuyo_client.hpp:31</div></div>
-<div class="ttc" id="classhokuyo_1_1tcp__client_html_accf06626b62b055ed25d2917059df73e"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html#accf06626b62b055ed25d2917059df73e">hokuyo::tcp_client::get_distances</a></div><div class="ttdeci">const fbuffer &amp; get_distances()</div><div class="ttdoc">returns vector distances (valid if avail()==true) </div><div class="ttdef"><b>Definition:</b> hokuyo_client.cpp:206</div></div>
-<div class="ttc" id="classhokuyo_1_1tcp__client_html_a8ffbb91db68f99829b3cd64e9875ce25"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html#a8ffbb91db68f99829b3cd64e9875ce25">hokuyo::tcp_client::size</a></div><div class="ttdeci">const size_t size()</div><div class="ttdoc">returns the number of available angle/distance pairs </div><div class="ttdef"><b>Definition:</b> hokuyo_client.cpp:194</div></div>
+<div class="ttc" id="classhokuyo_1_1tcp__client_html_accf06626b62b055ed25d2917059df73e"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html#accf06626b62b055ed25d2917059df73e">hokuyo::tcp_client::get_distances</a></div><div class="ttdeci">const fbuffer &amp; get_distances()</div><div class="ttdoc">returns vector distances (valid if avail()==true) </div><div class="ttdef"><b>Definition:</b> hokuyo_client.cpp:207</div></div>
+<div class="ttc" id="classhokuyo_1_1tcp__client_html_a8ffbb91db68f99829b3cd64e9875ce25"><div class="ttname"><a href="classhokuyo_1_1tcp__client.html#a8ffbb91db68f99829b3cd64e9875ce25">hokuyo::tcp_client::size</a></div><div class="ttdeci">const size_t size()</div><div class="ttdoc">returns the number of available angle/distance pairs </div><div class="ttdef"><b>Definition:</b> hokuyo_client.cpp:195</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:37 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:12 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

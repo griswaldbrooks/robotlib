@@ -3,7 +3,7 @@
 }
 
 
-$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Handler Abstract Class $\ast$$\ast$$\ast$///  
+Abstract class for all \hyperlink{classrlib_1_1Sensor}{Sensor} Handler objects.  
 
 
 
@@ -16,11 +16,62 @@ Inheritance diagram for rlib\-:\-:Sensor\-Handler\-:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classrlib_1_1SensorHandler}
 \end{center}
 \end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrlib_1_1SensorHandler_ace170c82c91c36497a1a486979ebba71}{Sensor\-Handler} ()
+\begin{DoxyCompactList}\small\item\em Default Handler constructor. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1SensorHandler_a48b4756a0838c3c26b2c6d71858c588f}{virtual void \hyperlink{classrlib_1_1SensorHandler_a48b4756a0838c3c26b2c6d71858c588f}{start\-Sensor} ()=0}\label{classrlib_1_1SensorHandler_a48b4756a0838c3c26b2c6d71858c588f}
+
+\begin{DoxyCompactList}\small\item\em Initializes and starts sensor. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1SensorHandler_aed535cfe7182f006c9df0f02b0a48dde}{virtual void \hyperlink{classrlib_1_1SensorHandler_aed535cfe7182f006c9df0f02b0a48dde}{stop\-Sensor} ()=0}\label{classrlib_1_1SensorHandler_aed535cfe7182f006c9df0f02b0a48dde}
+
+\begin{DoxyCompactList}\small\item\em Stops sensor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classrlib_1_1SensorData}{Sensor\-Data} $\ast$ \hyperlink{classrlib_1_1SensorHandler_a7f9c3e855f436aab794969b3b5cc3193}{get\-Data} ()=0
+\begin{DoxyCompactList}\small\item\em Gets data from the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Handler Abstract Class $\ast$$\ast$$\ast$/// 
+Abstract class for all \hyperlink{classrlib_1_1Sensor}{Sensor} Handler objects. 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+This is the abstract class for building all \hyperlink{classrlib_1_1Sensor}{Sensor} Handlers. These objects are meant to deal with the implementation details of actually getting sensor data. The \hyperlink{classrlib_1_1Sensor}{Sensor} Handler is kept by the \hyperlink{classrlib_1_1Sensor}{Sensor} object and uses it to get sensor data. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrlib_1_1SensorHandler_ace170c82c91c36497a1a486979ebba71}{\index{rlib\-::\-Sensor\-Handler@{rlib\-::\-Sensor\-Handler}!Sensor\-Handler@{Sensor\-Handler}}
+\index{Sensor\-Handler@{Sensor\-Handler}!rlib::SensorHandler@{rlib\-::\-Sensor\-Handler}}
+\subsubsection[{Sensor\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}rlib\-::\-Sensor\-Handler\-::\-Sensor\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1SensorHandler_ace170c82c91c36497a1a486979ebba71}
+
+
+Default Handler constructor. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Handler Class $\ast$$\ast$$\ast$/// 
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1SensorHandler_a7f9c3e855f436aab794969b3b5cc3193}{\index{rlib\-::\-Sensor\-Handler@{rlib\-::\-Sensor\-Handler}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!rlib::SensorHandler@{rlib\-::\-Sensor\-Handler}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Sensor\-Data}$\ast$ rlib\-::\-Sensor\-Handler\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classrlib_1_1SensorHandler_a7f9c3e855f436aab794969b3b5cc3193}
+
+
+Gets data from the sensor. 
+
+Requests new data from the sensor. This is a blocking function. \begin{DoxyReturn}{Returns}
+The sensor data packed into the \hyperlink{classrlib_1_1SensorData}{rlib\-::\-Sensor\-Data} format. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classrlib_1_1HokuyoLidarHandlerIP_af1b24513e31b16fb97b9a9124f29bc40}{rlib\-::\-Hokuyo\-Lidar\-Handler\-I\-P}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-include/rlib\-\_\-sensor.\-hpp\end{DoxyCompactItemize}
+include/rlib\-\_\-sensor.\-hpp\item 
+src/rlib\-\_\-sensor.\-cpp\end{DoxyCompactItemize}

@@ -13,13 +13,54 @@ Inheritance diagram for rlib\-:\-:Nao\-Basic\-Walker\-:\begin{figure}[H]
 \hypertarget{classrlib_1_1NaoBasicWalker_a43bdf705d8aeb9cdd8638cee899303b3}{{\bfseries Nao\-Basic\-Walker} (const char $\ast$name)}\label{classrlib_1_1NaoBasicWalker_a43bdf705d8aeb9cdd8638cee899303b3}
 
 \item 
-\hypertarget{classrlib_1_1NaoBasicWalker_a282dc6e13898cb72b01fbf5b133efeed}{void {\bfseries set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} pose)}\label{classrlib_1_1NaoBasicWalker_a282dc6e13898cb72b01fbf5b133efeed}
-
-\item 
-\hypertarget{classrlib_1_1NaoBasicWalker_adb9b1a9c71e0558ba57384f6b8385e1a}{void {\bfseries set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} velocity)}\label{classrlib_1_1NaoBasicWalker_adb9b1a9c71e0558ba57384f6b8385e1a}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classrlib_1_1NaoBasicWalker_a282dc6e13898cb72b01fbf5b133efeed}{set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} \hyperlink{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}{pose})
+\begin{DoxyCompactList}\small\item\em Sets the pose of the actuator. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1NaoBasicWalker_adb9b1a9c71e0558ba57384f6b8385e1a}{set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} \hyperlink{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}{velocity})
+\begin{DoxyCompactList}\small\item\em Sets the velocity of the actuator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1NaoBasicWalker_a282dc6e13898cb72b01fbf5b133efeed}{\index{rlib\-::\-Nao\-Basic\-Walker@{rlib\-::\-Nao\-Basic\-Walker}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!rlib::NaoBasicWalker@{rlib\-::\-Nao\-Basic\-Walker}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Nao\-Basic\-Walker\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Pose}}]{pose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrlib_1_1NaoBasicWalker_a282dc6e13898cb72b01fbf5b133efeed}
+
+
+Sets the pose of the actuator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The pose of the actuator with respect to its origin. If the pose command contains elements outside the pose limits of the actuator then the actuator will only be commanded to setpoints within those limits. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}{rlib\-::\-Actuator}.
+
+\hypertarget{classrlib_1_1NaoBasicWalker_adb9b1a9c71e0558ba57384f6b8385e1a}{\index{rlib\-::\-Nao\-Basic\-Walker@{rlib\-::\-Nao\-Basic\-Walker}!set\-Velocity@{set\-Velocity}}
+\index{set\-Velocity@{set\-Velocity}!rlib::NaoBasicWalker@{rlib\-::\-Nao\-Basic\-Walker}}
+\subsubsection[{set\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Nao\-Basic\-Walker\-::set\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Vel}}]{velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrlib_1_1NaoBasicWalker_adb9b1a9c71e0558ba57384f6b8385e1a}
+
+
+Sets the velocity of the actuator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The velocity of the actuator in the local frame. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}{rlib\-::\-Actuator}.
+
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

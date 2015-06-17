@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1Sensor.html">Sensor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1Sensor.html">Sensor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,56 +92,147 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classrlib_1_1Sensor-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">rlib::Sensor Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">rlib::Sensor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Abstract Class ***///  
+<p>Abstract class for creating <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> objects.  
  <a href="classrlib_1_1Sensor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for rlib::Sensor:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classrlib_1_1Sensor.png" usemap="#rlib::Sensor_map" alt=""/>
-  <map id="rlib::Sensor_map" name="rlib::Sensor_map">
-<area href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// " alt="rlib::Lidar" shape="rect" coords="0,56,76,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c91acd4bed299a37f744f67e3ed1c98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c91acd4bed299a37f744f67e3ed1c98"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a2c91acd4bed299a37f744f67e3ed1c98">Sensor</a> (const char *name)</td></tr>
-<tr class="memdesc:a2c91acd4bed299a37f744f67e3ed1c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Abstract Class ***/// <br/></td></tr>
+<tr class="memitem:a2c91acd4bed299a37f744f67e3ed1c98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a2c91acd4bed299a37f744f67e3ed1c98">Sensor</a> (const char *name)</td></tr>
+<tr class="memdesc:a2c91acd4bed299a37f744f67e3ed1c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for building Sensors.  <a href="#a2c91acd4bed299a37f744f67e3ed1c98">More...</a><br/></td></tr>
 <tr class="separator:a2c91acd4bed299a37f744f67e3ed1c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398dc38404983a823704271bd78434dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a398dc38404983a823704271bd78434dd"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
+<tr class="memitem:a398dc38404983a823704271bd78434dd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a398dc38404983a823704271bd78434dd">getName</a> ()</td></tr>
+<tr class="memdesc:a398dc38404983a823704271bd78434dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the sensor.  <a href="#a398dc38404983a823704271bd78434dd">More...</a><br/></td></tr>
 <tr class="separator:a398dc38404983a823704271bd78434dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e53ef67e2ed8c566122576894bba21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e53ef67e2ed8c566122576894bba21"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFrame</b> (<a class="el" href="classrlib_1_1Transform.html">Transform</a> tf)</td></tr>
+<tr class="memitem:a23e53ef67e2ed8c566122576894bba21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a23e53ef67e2ed8c566122576894bba21">setFrame</a> (<a class="el" href="classrlib_1_1Transform.html">Transform</a> tf)</td></tr>
+<tr class="memdesc:a23e53ef67e2ed8c566122576894bba21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the coordinate transformation between the parent and the sensor.  <a href="#a23e53ef67e2ed8c566122576894bba21">More...</a><br/></td></tr>
 <tr class="separator:a23e53ef67e2ed8c566122576894bba21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671966372280f694136d6b0880fdce33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a671966372280f694136d6b0880fdce33"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>startSensor</b> ()=0</td></tr>
-<tr class="separator:a671966372280f694136d6b0880fdce33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14db3d6d3bdcac79411c1abbb6439f41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14db3d6d3bdcac79411c1abbb6439f41"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stopSensor</b> ()=0</td></tr>
-<tr class="separator:a14db3d6d3bdcac79411c1abbb6439f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff2b43bfdd9e41444000924ba72ef9c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff2b43bfdd9e41444000924ba72ef9c6"></a>
-virtual <a class="el" href="classrlib_1_1SensorData.html">SensorData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> ()=0</td></tr>
-<tr class="separator:aff2b43bfdd9e41444000924ba72ef9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921157d5efc532bd008eb7b45ab44bc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a921157d5efc532bd008eb7b45ab44bc6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a921157d5efc532bd008eb7b45ab44bc6">startSensor</a> ()</td></tr>
+<tr class="memdesc:a921157d5efc532bd008eb7b45ab44bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the sensor. <br/></td></tr>
+<tr class="separator:a921157d5efc532bd008eb7b45ab44bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae871bf2e5863a0f6501124469b785c56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae871bf2e5863a0f6501124469b785c56"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#ae871bf2e5863a0f6501124469b785c56">stopSensor</a> ()</td></tr>
+<tr class="memdesc:ae871bf2e5863a0f6501124469b785c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the sensor. <br/></td></tr>
+<tr class="separator:ae871bf2e5863a0f6501124469b785c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153050f981af4d85b60732b38503f1f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153050f981af4d85b60732b38503f1f6"></a>
+virtual <a class="el" href="classrlib_1_1SensorData.html">SensorData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a153050f981af4d85b60732b38503f1f6">getData</a> ()</td></tr>
+<tr class="memdesc:a153050f981af4d85b60732b38503f1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data from the sensor. <br/></td></tr>
+<tr class="separator:a153050f981af4d85b60732b38503f1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b2a48700db3e057749395f1da121df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Sensor.html#a58b2a48700db3e057749395f1da121df">setHandler</a> (<a class="el" href="classrlib_1_1SensorHandler.html">SensorHandler</a> *handler)</td></tr>
+<tr class="memdesc:a58b2a48700db3e057749395f1da121df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classrlib_1_1SensorHandler.html" title="Abstract class for all Sensor Handler objects. ">SensorHandler</a> for this sensor.  <a href="#a58b2a48700db3e057749395f1da121df">More...</a><br/></td></tr>
+<tr class="separator:a58b2a48700db3e057749395f1da121df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Abstract Class ***/// </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>Abstract class for creating <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> objects. </p>
+<p>This class defines the abstract class that all <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> derivatives must follow. It is intended for handling representation details of any sensor. It must have a <a class="el" href="classrlib_1_1SensorHandler.html" title="Abstract class for all Sensor Handler objects. ">SensorHandler</a> in order to interact with a physical sensor. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2c91acd4bed299a37f744f67e3ed1c98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rlib::Sensor::Sensor </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for building Sensors. </p>
+<p>*** <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Abstract Class ***///</p>
+<p>Each sensor must have a name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name the sensor will have, used as a unique ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a398dc38404983a823704271bd78434dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string rlib::Sensor::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the name of the sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the sensor. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a23e53ef67e2ed8c566122576894bba21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rlib::Sensor::setFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrlib_1_1Transform.html">Transform</a>&#160;</td>
+          <td class="paramname"><em>tf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the coordinate transformation between the parent and the sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tf</td><td>The tranformation that brings the parent frame to the sensor frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a58b2a48700db3e057749395f1da121df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rlib::Sensor::setHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrlib_1_1SensorHandler.html">SensorHandler</a> *&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="classrlib_1_1SensorHandler.html" title="Abstract class for all Sensor Handler objects. ">SensorHandler</a> for this sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>The <a class="el" href="classrlib_1_1SensorHandler.html" title="Abstract class for all Sensor Handler objects. ">SensorHandler</a> object that interacts with the physical sensor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a></li>
 <li>src/rlib_sensor.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:39 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

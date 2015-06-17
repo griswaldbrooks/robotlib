@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1Transform.html">Transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1Transform.html">Transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,21 +95,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">rlib::Transform Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for defining rigid body transformations.  
+ <a href="classrlib_1_1Transform.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rlib__state_8hpp_source.html">rlib_state.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a38135d56804225fa5e1bac5a5c6b3d9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38135d56804225fa5e1bac5a5c6b3d9d"></a>
-Eigen::Transform&lt; float, <br class="typebreak"/>
-3, Eigen::Affine &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>T</b></td></tr>
+<tr class="memitem:a38135d56804225fa5e1bac5a5c6b3d9d"><td class="memItemLeft" align="right" valign="top">Eigen::Transform&lt; float, <br class="typebreak"/>
+3, Eigen::Affine &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Transform.html#a38135d56804225fa5e1bac5a5c6b3d9d">T</a></td></tr>
 <tr class="separator:a38135d56804225fa5e1bac5a5c6b3d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for defining rigid body transformations. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a38135d56804225fa5e1bac5a5c6b3d9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Transform&lt;float, 3, Eigen::Affine&gt; rlib::Transform::T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rigid body relationships are represented as a 4x4 Homogeneous Transformation matrix. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="rlib__state_8hpp_source.html">rlib_state.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:39 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

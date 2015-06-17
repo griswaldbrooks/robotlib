@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/test_actuator.dir/src/rlib_actuator_tester.cpp.o  -o test_actuator  -L/home/crrl-user1/code_projects/robotlib/lib -rdynamic -lROBOTLIB -Wl,-rpath,/home/crrl-user1/code_projects/robotlib/lib 
+/usr/bin/c++       CMakeFiles/test_actuator.dir/src/rlib_actuator_tester.cpp.o  -o test_actuator  -L/home/crrl-user1/code_projects/robotlib/lib -rdynamic -lROBOTLIB -lboost_system -lboost_thread -lpthread -Wl,-rpath,/home/crrl-user1/code_projects/robotlib/lib 

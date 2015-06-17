@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -147,23 +147,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classrlib_1_1NaoBasicWalker.html">NaoBasicWalker</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * name);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Set the pose of the actuator with respect to its origin.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> setPosition(<a class="code" href="classrlib_1_1Pose.html">Pose</a> pose);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrlib_1_1NaoBasicWalker.html#a282dc6e13898cb72b01fbf5b133efeed">setPosition</a>(<a class="code" href="classrlib_1_1Pose.html">Pose</a> <a class="code" href="classrlib_1_1Actuator.html#adcce3f106abc4127382d0d9794bb7b15">pose</a>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// Set the velocity of the actuator in the local frame.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> setVelocity(<a class="code" href="classrlib_1_1Vel.html">Vel</a> velocity);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classrlib_1_1NaoBasicWalker.html#adb9b1a9c71e0558ba57384f6b8385e1a">setVelocity</a>(<a class="code" href="classrlib_1_1Vel.html">Vel</a> <a class="code" href="classrlib_1_1Actuator.html#a27372af2dd629e7b434eb541de0a13a8">velocity</a>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// TODO: Add builder class that returns a robot of type Nao.</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classrlib_1_1Actuator_html"><div class="ttname"><a href="classrlib_1_1Actuator.html">rlib::Actuator</a></div><div class="ttdef"><b>Definition:</b> rlib_actuator.hpp:35</div></div>
-<div class="ttc" id="classrlib_1_1Pose_html"><div class="ttname"><a href="classrlib_1_1Pose.html">rlib::Pose</a></div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:35</div></div>
-<div class="ttc" id="classrlib_1_1Vel_html"><div class="ttname"><a href="classrlib_1_1Vel.html">rlib::Vel</a></div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:26</div></div>
+<div class="ttc" id="classrlib_1_1Actuator_html_adcce3f106abc4127382d0d9794bb7b15"><div class="ttname"><a href="classrlib_1_1Actuator.html#adcce3f106abc4127382d0d9794bb7b15">rlib::Actuator::pose</a></div><div class="ttdeci">Pose pose</div><div class="ttdef"><b>Definition:</b> rlib_actuator.hpp:132</div></div>
+<div class="ttc" id="classrlib_1_1NaoBasicWalker_html_a282dc6e13898cb72b01fbf5b133efeed"><div class="ttname"><a href="classrlib_1_1NaoBasicWalker.html#a282dc6e13898cb72b01fbf5b133efeed">rlib::NaoBasicWalker::setPosition</a></div><div class="ttdeci">void setPosition(Pose pose)</div><div class="ttdoc">Sets the pose of the actuator. </div><div class="ttdef"><b>Definition:</b> rlib_nao.cpp:33</div></div>
+<div class="ttc" id="classrlib_1_1Actuator_html"><div class="ttname"><a href="classrlib_1_1Actuator.html">rlib::Actuator</a></div><div class="ttdoc">Abstract class for implementing actuators. </div><div class="ttdef"><b>Definition:</b> rlib_actuator.hpp:77</div></div>
+<div class="ttc" id="classrlib_1_1Pose_html"><div class="ttname"><a href="classrlib_1_1Pose.html">rlib::Pose</a></div><div class="ttdoc">Class for defining pose. </div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:44</div></div>
+<div class="ttc" id="classrlib_1_1Vel_html"><div class="ttname"><a href="classrlib_1_1Vel.html">rlib::Vel</a></div><div class="ttdoc">Class for defining velocities. </div><div class="ttdef"><b>Definition:</b> rlib_state.hpp:28</div></div>
 <div class="ttc" id="classrlib_1_1NaoBasicWalker_html"><div class="ttname"><a href="classrlib_1_1NaoBasicWalker.html">rlib::NaoBasicWalker</a></div><div class="ttdef"><b>Definition:</b> rlib_nao.hpp:55</div></div>
+<div class="ttc" id="classrlib_1_1NaoBasicWalker_html_adb9b1a9c71e0558ba57384f6b8385e1a"><div class="ttname"><a href="classrlib_1_1NaoBasicWalker.html#adb9b1a9c71e0558ba57384f6b8385e1a">rlib::NaoBasicWalker::setVelocity</a></div><div class="ttdeci">void setVelocity(Vel velocity)</div><div class="ttdoc">Sets the velocity of the actuator. </div><div class="ttdef"><b>Definition:</b> rlib_nao.cpp:41</div></div>
+<div class="ttc" id="classrlib_1_1Actuator_html_a27372af2dd629e7b434eb541de0a13a8"><div class="ttname"><a href="classrlib_1_1Actuator.html#a27372af2dd629e7b434eb541de0a13a8">rlib::Actuator::velocity</a></div><div class="ttdeci">Vel velocity</div><div class="ttdef"><b>Definition:</b> rlib_actuator.hpp:136</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:37 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:12 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

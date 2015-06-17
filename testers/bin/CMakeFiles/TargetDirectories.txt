@@ -1,2 +1,3 @@
 /home/crrl-user1/code_projects/robotlib/testers/bin/CMakeFiles/test_actuator.dir
 /home/crrl-user1/code_projects/robotlib/testers/bin/CMakeFiles/test_nao.dir
+/home/crrl-user1/code_projects/robotlib/testers/bin/CMakeFiles/test_navigation.dir

@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,16 +84,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1SensorData.html">SensorData</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1SensorData.html">SensorData</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#friends">Friends</a> &#124;
+<a href="classrlib_1_1SensorData-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">rlib::SensorData Class Reference</div>  </div>
+<div class="title">rlib::SensorData Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Data Abstract Class ***///  
+<p><a class="el" href="classrlib_1_1SensorData.html" title="SensorData class for getting data from Sensors. ">SensorData</a> class for getting data from Sensors.  
  <a href="classrlib_1_1SensorData.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a>&gt;</code></p>
@@ -105,20 +108,29 @@ Inheritance diagram for rlib::SensorData:</div>
   <map id="rlib::SensorData_map" name="rlib::SensorData_map">
 <area href="classrlib_1_1ImageData.html" alt="rlib::ImageData" shape="rect" coords="0,56,123,80"/>
 <area href="classrlib_1_1InfraredData.html" alt="rlib::InfraredData" shape="rect" coords="133,56,256,80"/>
-<area href="classrlib_1_1LidarData.html" title="*** Lidar Data Class ***/// " alt="rlib::LidarData" shape="rect" coords="266,56,389,80"/>
+<area href="classrlib_1_1LidarData.html" title="LidarData class for getting data from a Lidar Sensor. " alt="rlib::LidarData" shape="rect" coords="266,56,389,80"/>
 <area href="classrlib_1_1PointCloudData.html" alt="rlib::PointCloudData" shape="rect" coords="399,56,522,80"/>
-<area href="classrlib_1_1SonarData.html" title="*** Sensor Data Classes ***/// " alt="rlib::SonarData" shape="rect" coords="532,56,655,80"/>
+<area href="classrlib_1_1SonarData.html" alt="rlib::SonarData" shape="rect" coords="532,56,655,80"/>
 </map>
  </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a36d6b9ae4a89f39cedf76c76814c96ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36d6b9ae4a89f39cedf76c76814c96ae"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1SensorData.html#a36d6b9ae4a89f39cedf76c76814c96ae">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classrlib_1_1SensorData.html">SensorData</a> &amp;data)</td></tr>
+<tr class="memdesc:a36d6b9ae4a89f39cedf76c76814c96ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print operator for <a class="el" href="classrlib_1_1Sensor.html" title="Abstract class for creating Sensor objects. ">Sensor</a> Data. <br/></td></tr>
+<tr class="separator:a36d6b9ae4a89f39cedf76c76814c96ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>*** <a class="el" href="classrlib_1_1Sensor.html" title="*** Sensor Abstract Class ***/// ">Sensor</a> Data Abstract Class ***/// </p>
+<div class="textblock"><p><a class="el" href="classrlib_1_1SensorData.html" title="SensorData class for getting data from Sensors. ">SensorData</a> class for getting data from Sensors. </p>
+<p>Abstract class for encapsulating sensor data. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:38 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

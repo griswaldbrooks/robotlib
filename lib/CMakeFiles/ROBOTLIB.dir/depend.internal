@@ -6,17 +6,32 @@ CMakeFiles/ROBOTLIB.dir/src/hokuyo_client.cpp.o
  /home/crrl-user1/code_projects/robotlib/src/hokuyo_client.cpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_actuator.cpp.o
  ../include/rlib_actuator.hpp
+ ../include/rlib_controller.hpp
  ../include/rlib_state.hpp
  /home/crrl-user1/code_projects/robotlib/src/rlib_actuator.cpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_nao.cpp.o
+ ../include/hokuyo_client.hpp
  ../include/rlib_actuator.hpp
+ ../include/rlib_controller.hpp
  ../include/rlib_nao.hpp
+ ../include/rlib_observer.hpp
  ../include/rlib_robot.hpp
+ ../include/rlib_sensor.hpp
  ../include/rlib_state.hpp
  /home/crrl-user1/code_projects/robotlib/src/rlib_nao.cpp
+CMakeFiles/ROBOTLIB.dir/src/rlib_robot.cpp.o
+ ../include/hokuyo_client.hpp
+ ../include/rlib_actuator.hpp
+ ../include/rlib_controller.hpp
+ ../include/rlib_observer.hpp
+ ../include/rlib_robot.hpp
+ ../include/rlib_sensor.hpp
+ ../include/rlib_state.hpp
+ /home/crrl-user1/code_projects/robotlib/src/rlib_robot.cpp
 CMakeFiles/ROBOTLIB.dir/src/rlib_sensor.cpp.o
  ../include/hokuyo_client.hpp
  ../include/rlib_actuator.hpp
+ ../include/rlib_controller.hpp
  ../include/rlib_sensor.hpp
  ../include/rlib_state.hpp
  /home/crrl-user1/code_projects/robotlib/src/rlib_sensor.cpp

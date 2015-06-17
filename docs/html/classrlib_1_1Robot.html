@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1Robot.html">Robot</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1Robot.html">Robot</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,46 +100,49 @@ Inheritance diagram for rlib::Robot:</div>
  <div class="center">
   <img src="classrlib_1_1Robot.png" usemap="#rlib::Robot_map" alt=""/>
   <map id="rlib::Robot_map" name="rlib::Robot_map">
-<area href="classrlib_1_1Actuator.html" alt="rlib::Actuator" shape="rect" coords="0,0,84,24"/>
+<area href="classrlib_1_1Actuator.html" title="Abstract class for implementing actuators. " alt="rlib::Actuator" shape="rect" coords="0,0,84,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_classrlib_1_1Actuator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrlib_1_1Actuator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrlib_1_1Actuator.html">rlib::Actuator</a></td></tr>
-<tr class="memitem:a4586932cf12e921639b5186b12f87866 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4586932cf12e921639b5186b12f87866"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Actuator</b> (const char *name)</td></tr>
+<tr class="memitem:a4586932cf12e921639b5186b12f87866 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a4586932cf12e921639b5186b12f87866">Actuator</a> (const char *name)</td></tr>
+<tr class="memdesc:a4586932cf12e921639b5186b12f87866 inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the actuator class.  <a href="#a4586932cf12e921639b5186b12f87866">More...</a><br/></td></tr>
 <tr class="separator:a4586932cf12e921639b5186b12f87866 inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99eafe0706d84c5aed5d9cc3832996a5 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99eafe0706d84c5aed5d9cc3832996a5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (<a class="el" href="classrlib_1_1Pose.html">Pose</a> pose)=0</td></tr>
+<tr class="memitem:a99eafe0706d84c5aed5d9cc3832996a5 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a99eafe0706d84c5aed5d9cc3832996a5">setPosition</a> (<a class="el" href="classrlib_1_1Pose.html">Pose</a> <a class="el" href="classrlib_1_1Actuator.html#adcce3f106abc4127382d0d9794bb7b15">pose</a>)=0</td></tr>
+<tr class="memdesc:a99eafe0706d84c5aed5d9cc3832996a5 inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pose of the actuator.  <a href="#a99eafe0706d84c5aed5d9cc3832996a5">More...</a><br/></td></tr>
 <tr class="separator:a99eafe0706d84c5aed5d9cc3832996a5 inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8495e9dee469245fa6eba719b047cb3f inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8495e9dee469245fa6eba719b047cb3f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setVelocity</b> (<a class="el" href="classrlib_1_1Vel.html">Vel</a> velocity)=0</td></tr>
+<tr class="memitem:a8495e9dee469245fa6eba719b047cb3f inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a8495e9dee469245fa6eba719b047cb3f">setVelocity</a> (<a class="el" href="classrlib_1_1Vel.html">Vel</a> <a class="el" href="classrlib_1_1Actuator.html#a27372af2dd629e7b434eb541de0a13a8">velocity</a>)=0</td></tr>
+<tr class="memdesc:a8495e9dee469245fa6eba719b047cb3f inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the velocity of the actuator.  <a href="#a8495e9dee469245fa6eba719b047cb3f">More...</a><br/></td></tr>
 <tr class="separator:a8495e9dee469245fa6eba719b047cb3f inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4694ce3e4474e27bda1ed39cc048b6e inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4694ce3e4474e27bda1ed39cc048b6e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
-<tr class="separator:af4694ce3e4474e27bda1ed39cc048b6e inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba68f5222df9f7878538b36daad068f inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaba68f5222df9f7878538b36daad068f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="classrlib_1_1Actuator.html">Actuator</a> *parent)</td></tr>
+<tr class="memitem:aaba68f5222df9f7878538b36daad068f inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#aaba68f5222df9f7878538b36daad068f">setParent</a> (<a class="el" href="classrlib_1_1Actuator.html">Actuator</a> *parent)</td></tr>
+<tr class="memdesc:aaba68f5222df9f7878538b36daad068f inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the actuator parent in the kinematic chain.  <a href="#aaba68f5222df9f7878538b36daad068f">More...</a><br/></td></tr>
 <tr class="separator:aaba68f5222df9f7878538b36daad068f inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9057584b1c8855a525816f9a1a973da4 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a9057584b1c8855a525816f9a1a973da4">setChild</a> (<a class="el" href="classrlib_1_1Actuator.html">Actuator</a> *child)</td></tr>
+<tr class="memdesc:a9057584b1c8855a525816f9a1a973da4 inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the child actuator in the kinematic chain.  <a href="#a9057584b1c8855a525816f9a1a973da4">More...</a><br/></td></tr>
+<tr class="separator:a9057584b1c8855a525816f9a1a973da4 inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138ade22d9534a93780f97b5c1af07a6 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a138ade22d9534a93780f97b5c1af07a6">setFrame</a> (<a class="el" href="classrlib_1_1Transform.html">Transform</a> tf)</td></tr>
+<tr class="memdesc:a138ade22d9534a93780f97b5c1af07a6 inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the coordinate transformation between the parent and the sensor.  <a href="#a138ade22d9534a93780f97b5c1af07a6">More...</a><br/></td></tr>
+<tr class="separator:a138ade22d9534a93780f97b5c1af07a6 inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c3a5a5de2ab54d6b06fe223ec5e7e6 inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#af3c3a5a5de2ab54d6b06fe223ec5e7e6">setHandler</a> (<a class="el" href="classrlib_1_1ActuatorHandler.html">ActuatorHandler</a> *handler)</td></tr>
+<tr class="memdesc:af3c3a5a5de2ab54d6b06fe223ec5e7e6 inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classrlib_1_1ActuatorHandler.html" title="Abstract handler class for implementing actuators. ">ActuatorHandler</a> for this sensor.  <a href="#af3c3a5a5de2ab54d6b06fe223ec5e7e6">More...</a><br/></td></tr>
+<tr class="separator:af3c3a5a5de2ab54d6b06fe223ec5e7e6 inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4694ce3e4474e27bda1ed39cc048b6e inherit pub_methods_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#af4694ce3e4474e27bda1ed39cc048b6e">getName</a> ()</td></tr>
+<tr class="memdesc:af4694ce3e4474e27bda1ed39cc048b6e inherit pub_methods_classrlib_1_1Actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the actuator unique identifier.  <a href="#af4694ce3e4474e27bda1ed39cc048b6e">More...</a><br/></td></tr>
+<tr class="separator:af4694ce3e4474e27bda1ed39cc048b6e inherit pub_methods_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classrlib_1_1Actuator"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classrlib_1_1Actuator')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classrlib_1_1Actuator.html">rlib::Actuator</a></td></tr>
-<tr class="memitem:adcce3f106abc4127382d0d9794bb7b15 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcce3f106abc4127382d0d9794bb7b15"></a>
-<a class="el" href="classrlib_1_1Pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pose</b></td></tr>
+<tr class="memitem:adcce3f106abc4127382d0d9794bb7b15 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1Pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#adcce3f106abc4127382d0d9794bb7b15">pose</a></td></tr>
 <tr class="separator:adcce3f106abc4127382d0d9794bb7b15 inherit pro_attribs_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0dd994c7e78e9db5580ea23d1361f4e inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0dd994c7e78e9db5580ea23d1361f4e"></a>
-<a class="el" href="classrlib_1_1Pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><b>posMax</b></td></tr>
+<tr class="memitem:ae0dd994c7e78e9db5580ea23d1361f4e inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1Pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#ae0dd994c7e78e9db5580ea23d1361f4e">posMax</a></td></tr>
 <tr class="separator:ae0dd994c7e78e9db5580ea23d1361f4e inherit pro_attribs_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ab8363fb4cfe849f1bb89720387d222 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ab8363fb4cfe849f1bb89720387d222"></a>
-<a class="el" href="classrlib_1_1Pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><b>posMin</b></td></tr>
+<tr class="memitem:a4ab8363fb4cfe849f1bb89720387d222 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1Pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a4ab8363fb4cfe849f1bb89720387d222">posMin</a></td></tr>
 <tr class="separator:a4ab8363fb4cfe849f1bb89720387d222 inherit pro_attribs_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27372af2dd629e7b434eb541de0a13a8 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27372af2dd629e7b434eb541de0a13a8"></a>
-<a class="el" href="classrlib_1_1Vel.html">Vel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b></td></tr>
+<tr class="memitem:a27372af2dd629e7b434eb541de0a13a8 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1Vel.html">Vel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a27372af2dd629e7b434eb541de0a13a8">velocity</a></td></tr>
 <tr class="separator:a27372af2dd629e7b434eb541de0a13a8 inherit pro_attribs_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b50a2b0f4cb61a4e5c70fa72a126dc inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54b50a2b0f4cb61a4e5c70fa72a126dc"></a>
-<a class="el" href="classrlib_1_1Vel.html">Vel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>velMax</b></td></tr>
+<tr class="memitem:a54b50a2b0f4cb61a4e5c70fa72a126dc inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1Vel.html">Vel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#a54b50a2b0f4cb61a4e5c70fa72a126dc">velMax</a></td></tr>
 <tr class="separator:a54b50a2b0f4cb61a4e5c70fa72a126dc inherit pro_attribs_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d95d72f27494890e16ed4ab6045f20 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8d95d72f27494890e16ed4ab6045f20"></a>
-<a class="el" href="classrlib_1_1Vel.html">Vel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>velMin</b></td></tr>
+<tr class="memitem:ad8d95d72f27494890e16ed4ab6045f20 inherit pro_attribs_classrlib_1_1Actuator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1Vel.html">Vel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1Actuator.html#ad8d95d72f27494890e16ed4ab6045f20">velMin</a></td></tr>
 <tr class="separator:ad8d95d72f27494890e16ed4ab6045f20 inherit pro_attribs_classrlib_1_1Actuator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -148,7 +151,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:38 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:12 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

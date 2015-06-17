@@ -13,13 +13,54 @@ Inheritance diagram for rlib\-:\-:Mobile\-Base\-:\begin{figure}[H]
 \hypertarget{classrlib_1_1MobileBase_a7bd9b6898b967ea5eee27f64a4a62063}{{\bfseries Mobile\-Base} (const char $\ast$name)}\label{classrlib_1_1MobileBase_a7bd9b6898b967ea5eee27f64a4a62063}
 
 \item 
-\hypertarget{classrlib_1_1MobileBase_ab384dfccdcadfdfdcb4682b7361502f0}{void {\bfseries set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} pose)}\label{classrlib_1_1MobileBase_ab384dfccdcadfdfdcb4682b7361502f0}
-
-\item 
-\hypertarget{classrlib_1_1MobileBase_a0d299cb807df63bd9cf9b259d4ce84fe}{void {\bfseries set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} velocity)}\label{classrlib_1_1MobileBase_a0d299cb807df63bd9cf9b259d4ce84fe}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classrlib_1_1MobileBase_ab384dfccdcadfdfdcb4682b7361502f0}{set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} \hyperlink{classrlib_1_1Actuator_adcce3f106abc4127382d0d9794bb7b15}{pose})
+\begin{DoxyCompactList}\small\item\em Sets the pose of the actuator. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1MobileBase_a0d299cb807df63bd9cf9b259d4ce84fe}{set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} \hyperlink{classrlib_1_1Actuator_a27372af2dd629e7b434eb541de0a13a8}{velocity})
+\begin{DoxyCompactList}\small\item\em Sets the velocity of the actuator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1MobileBase_ab384dfccdcadfdfdcb4682b7361502f0}{\index{rlib\-::\-Mobile\-Base@{rlib\-::\-Mobile\-Base}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!rlib::MobileBase@{rlib\-::\-Mobile\-Base}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Mobile\-Base\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Pose}}]{pose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrlib_1_1MobileBase_ab384dfccdcadfdfdcb4682b7361502f0}
+
+
+Sets the pose of the actuator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The pose of the actuator with respect to its origin. If the pose command contains elements outside the pose limits of the actuator then the actuator will only be commanded to setpoints within those limits. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrlib_1_1Actuator_a99eafe0706d84c5aed5d9cc3832996a5}{rlib\-::\-Actuator}.
+
+\hypertarget{classrlib_1_1MobileBase_a0d299cb807df63bd9cf9b259d4ce84fe}{\index{rlib\-::\-Mobile\-Base@{rlib\-::\-Mobile\-Base}!set\-Velocity@{set\-Velocity}}
+\index{set\-Velocity@{set\-Velocity}!rlib::MobileBase@{rlib\-::\-Mobile\-Base}}
+\subsubsection[{set\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Mobile\-Base\-::set\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Vel}}]{velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrlib_1_1MobileBase_a0d299cb807df63bd9cf9b259d4ce84fe}
+
+
+Sets the velocity of the actuator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The velocity of the actuator in the local frame. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrlib_1_1Actuator_a8495e9dee469245fa6eba719b047cb3f}{rlib\-::\-Actuator}.
+
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

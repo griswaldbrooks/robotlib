@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1LidarData.html">LidarData</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1LidarData.html">LidarData</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,14 +95,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getData</b>() (defined in <a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a>)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getRange</b>(float angle) (defined in <a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a>)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>LidarData</b>(std::vector&lt; float &gt; &amp;ranges, std::vector&lt; float &gt; &amp;angles) (defined in <a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a>)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>size</b>() (defined in <a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a>)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1LidarData.html#a4249c865a00c72fe80c8a210667c2ca4">getData</a>()</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classrlib_1_1LidarData.html#a7c0a03b228b5b85e81b35f2cc61e6008">getRange</a>(float angle)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1LidarData.html#a57b4749e1274030136fce1e5fbbca33d">LidarData</a>(std::vector&lt; float &gt; &amp;ranges, std::vector&lt; float &gt; &amp;angles)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classrlib_1_1LidarData.html#ac142a9d8c3161d74c8d3d39c093ecde4">operator&lt;&lt;</a>(std::ostream &amp;os, LidarData &amp;data)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1LidarData.html#a1d9dc0bbc59f528f3d76492fd5aec816">printToStream</a>(std::ostream &amp;os)</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrlib_1_1LidarData.html#abf37f41dee75528211a93833e2d68520">size</a>()</td><td class="entry"><a class="el" href="classrlib_1_1LidarData.html">rlib::LidarData</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:38 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -144,8 +144,8 @@ namespace hokuyo
 				if(cli->check())
 				{
 					++cli->n_rec_frames;
-					HOKUYO_MESSAGE("Frames : "<<cli->n_rec_frames);
-					HOKUYO_MESSAGE("Data   : "<<size());
+					HOKUYO_MESSAGE("Frames : "<< cli->n_rec_frames);
+					HOKUYO_MESSAGE("Data   : "<< cli->size());
 				}
 				else
 				{
@@ -162,6 +162,7 @@ namespace hokuyo
 
 	void tcp_client::request()
 	{
+		available = false; // Added 6/11/15 To remove timing bug
 		requested = true;
 	}
 

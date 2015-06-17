@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1Sensor.html">Sensor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1Sensor.html">Sensor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,16 +95,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getData</b>()=0 (defined in <a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a>)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getName</b>() (defined in <a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a>)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#a153050f981af4d85b60732b38503f1f6">getData</a>()</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#a398dc38404983a823704271bd78434dd">getName</a>()</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#a2c91acd4bed299a37f744f67e3ed1c98">Sensor</a>(const char *name)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setFrame</b>(Transform tf) (defined in <a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a>)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>startSensor</b>()=0 (defined in <a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a>)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>stopSensor</b>()=0 (defined in <a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a>)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#a23e53ef67e2ed8c566122576894bba21">setFrame</a>(Transform tf)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#a58b2a48700db3e057749395f1da121df">setHandler</a>(SensorHandler *handler)</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#a921157d5efc532bd008eb7b45ab44bc6">startSensor</a>()</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrlib_1_1Sensor.html#ae871bf2e5863a0f6501124469b785c56">stopSensor</a>()</td><td class="entry"><a class="el" href="classrlib_1_1Sensor.html">rlib::Sensor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:39 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

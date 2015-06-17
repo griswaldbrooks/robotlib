@@ -14,6 +14,33 @@
 # EXTERNAL cache entries
 ########################
 
+//Boost array library (debug)
+Boost_ARRAY_LIBRARY_DEBUG:FILEPATH=Boost_ARRAY_LIBRARY_DEBUG-NOTFOUND
+
+//Boost array library (release)
+Boost_ARRAY_LIBRARY_RELEASE:FILEPATH=Boost_ARRAY_LIBRARY_RELEASE-NOTFOUND
+
+//Boost asio library (debug)
+Boost_ASIO_LIBRARY_DEBUG:FILEPATH=Boost_ASIO_LIBRARY_DEBUG-NOTFOUND
+
+//Boost asio library (release)
+Boost_ASIO_LIBRARY_RELEASE:FILEPATH=Boost_ASIO_LIBRARY_RELEASE-NOTFOUND
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+//Boost library directory
+Boost_LIBRARY_DIR:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost thread library (debug)
+Boost_THREAD_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_thread.so
+
+//Boost thread library (release)
+Boost_THREAD_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_thread.so
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -170,6 +197,31 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a program.
+PYTHON2_EXECUTABLE:FILEPATH=/usr/bin/python2
+
+//qibuild version
+QIBUILD_VERSION:STRING=3.6.2
+
+//Force 32bits build even when on 64bits
+QI_FORCE_32_BITS:BOOL=OFF
+
+//Enable code coverage
+QI_WITH_COVERAGE:BOOL=OFF
+
+//Default is to follow CMAKE_BUILD_TYPE
+QI_WITH_DEBUG_INFO:BOOL=OFF
+
+//triggers building of nightly tests
+QI_WITH_NIGHTLY_TESTS:BOOL=OFF
+
+//Triggers building of perf tests
+QI_WITH_PERF_TESTS:BOOL=OFF
+
+//If OFF, no test will be built, and `qibuild test` won't run any
+// test
+QI_WITH_TESTS:BOOL=ON
+
 //Value Computed by CMake
 ROBOTLIB_BINARY_DIR:STATIC=/home/crrl-user1/code_projects/robotlib/lib
 
@@ -196,6 +248,26 @@ test_LIB_DEPENDS:STATIC=
 # INTERNAL cache entries
 ########################
 
+BUILD_PERF_TESTS:INTERNAL=OFF
+BUILD_TESTS:INTERNAL=ON
+//ADVANCED property for variable: Boost_ARRAY_LIBRARY_DEBUG
+Boost_ARRAY_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_ARRAY_LIBRARY_RELEASE
+Boost_ARRAY_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_ASIO_LIBRARY_DEBUG
+Boost_ASIO_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_ASIO_LIBRARY_RELEASE
+Boost_ASIO_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR
+Boost_LIBRARY_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_THREAD_LIBRARY_DEBUG
+Boost_THREAD_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_THREAD_LIBRARY_RELEASE
+Boost_THREAD_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
@@ -279,6 +351,7 @@ CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+CMAKE_MODULE_PATH:INTERNAL=/home/crrl-user1/.local/share/cmake/qibuild/..
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
@@ -287,6 +360,7 @@ CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=1
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
 CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
+CMAKE_PREFIX_PATH:INTERNAL=/home/crrl-user1/code_projects/robotlib/lib/sdk;/home/crrl-user1/.local/share/cmake/qibuild/modules/
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
@@ -323,4 +397,25 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+QI_NIGHTLY_TESTS:INTERNAL=OFF
+QI_SDK_BIN:INTERNAL=bin
+QI_SDK_CMAKE:INTERNAL=share/cmake
+QI_SDK_CMAKE_MODULES:INTERNAL=cmake
+QI_SDK_CONF:INTERNAL=etc
+QI_SDK_DIR:INTERNAL=/home/crrl-user1/code_projects/robotlib/lib/sdk
+QI_SDK_DOC:INTERNAL=share/doc
+QI_SDK_FRAMEWORK:INTERNAL=Frameworks
+QI_SDK_INCLUDE:INTERNAL=include
+QI_SDK_LIB:INTERNAL=lib
+QI_SDK_SHARE:INTERNAL=share
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=array;asio;thread
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
+//Last used Boost_LIBRARY_DIR value.
+_Boost_LIBRARY_DIR_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+_dpkg_architecture:INTERNAL=/usr/bin/dpkg-architecture
+qibuild_DIR:INTERNAL=/home/crrl-user1/.local/share/cmake/qibuild
 

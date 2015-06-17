@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rlib</b></li><li class="navelem"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html">HokuyoLidarHandlerIP</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacerlib.html">rlib</a></li><li class="navelem"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html">HokuyoLidarHandlerIP</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,6 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Hokuyo Lidar Handler class using IP connected Lidar.  
+ <a href="classrlib_1_1HokuyoLidarHandlerIP.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for rlib::HokuyoLidarHandlerIP:</div>
@@ -103,44 +106,49 @@ Inheritance diagram for rlib::HokuyoLidarHandlerIP:</div>
  <div class="center">
   <img src="classrlib_1_1HokuyoLidarHandlerIP.png" usemap="#rlib::HokuyoLidarHandlerIP_map" alt=""/>
   <map id="rlib::HokuyoLidarHandlerIP_map" name="rlib::HokuyoLidarHandlerIP_map">
-<area href="classrlib_1_1SensorHandler.html" title="*** Sensor Handler Abstract Class ***/// " alt="rlib::SensorHandler" shape="rect" coords="0,0,164,24"/>
+<area href="classrlib_1_1SensorHandler.html" title="Abstract class for all Sensor Handler objects. " alt="rlib::SensorHandler" shape="rect" coords="0,0,164,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f771103bc0c0d5d989b8cd97ceaab54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#a6f771103bc0c0d5d989b8cd97ceaab54">HokuyoLidarHandlerIP</a> (char *ip, char *port)</td></tr>
-<tr class="memdesc:a6f771103bc0c0d5d989b8cd97ceaab54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for IP version of Hokoyu <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> Handler.  <a href="#a6f771103bc0c0d5d989b8cd97ceaab54">More...</a><br/></td></tr>
-<tr class="separator:a6f771103bc0c0d5d989b8cd97ceaab54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5670fe812188c2a47f2095161ed6d5a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#a5670fe812188c2a47f2095161ed6d5a5">HokuyoLidarHandlerIP</a> (const char *ip, const char *port)</td></tr>
+<tr class="memdesc:a5670fe812188c2a47f2095161ed6d5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for IP version of Hokoyu Lidar Handler.  <a href="#a5670fe812188c2a47f2095161ed6d5a5">More...</a><br/></td></tr>
+<tr class="separator:a5670fe812188c2a47f2095161ed6d5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379dbeec9ace02bb0d4840509f009576"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a379dbeec9ace02bb0d4840509f009576"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#a379dbeec9ace02bb0d4840509f009576">startSensor</a> ()</td></tr>
-<tr class="memdesc:a379dbeec9ace02bb0d4840509f009576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates communication with the <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a>. <br/></td></tr>
+<tr class="memdesc:a379dbeec9ace02bb0d4840509f009576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates communication with the Lidar. <br/></td></tr>
 <tr class="separator:a379dbeec9ace02bb0d4840509f009576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe7200d26d5a38642da2d58e6ccf2b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafe7200d26d5a38642da2d58e6ccf2b3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#aafe7200d26d5a38642da2d58e6ccf2b3">stopSensor</a> ()</td></tr>
-<tr class="memdesc:aafe7200d26d5a38642da2d58e6ccf2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> connection. <br/></td></tr>
+<tr class="memdesc:aafe7200d26d5a38642da2d58e6ccf2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates Lidar connection. <br/></td></tr>
 <tr class="separator:aafe7200d26d5a38642da2d58e6ccf2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7882c2d6edebb830a9986d202ad05b41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1SensorData.html">SensorData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#a7882c2d6edebb830a9986d202ad05b41">getData</a> ()</td></tr>
-<tr class="memdesc:a7882c2d6edebb830a9986d202ad05b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets range and angle data from the sensor.  <a href="#a7882c2d6edebb830a9986d202ad05b41">More...</a><br/></td></tr>
-<tr class="separator:a7882c2d6edebb830a9986d202ad05b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b24513e31b16fb97b9a9124f29bc40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrlib_1_1SensorData.html">SensorData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html#af1b24513e31b16fb97b9a9124f29bc40">getData</a> ()</td></tr>
+<tr class="memdesc:af1b24513e31b16fb97b9a9124f29bc40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets range and angle data from the sensor.  <a href="#af1b24513e31b16fb97b9a9124f29bc40">More...</a><br/></td></tr>
+<tr class="separator:af1b24513e31b16fb97b9a9124f29bc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classrlib_1_1SensorHandler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classrlib_1_1SensorHandler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classrlib_1_1SensorHandler.html">rlib::SensorHandler</a></td></tr>
+<tr class="memitem:ace170c82c91c36497a1a486979ebba71 inherit pub_methods_classrlib_1_1SensorHandler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrlib_1_1SensorHandler.html#ace170c82c91c36497a1a486979ebba71">SensorHandler</a> ()</td></tr>
+<tr class="memdesc:ace170c82c91c36497a1a486979ebba71 inherit pub_methods_classrlib_1_1SensorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Handler constructor.  <a href="#ace170c82c91c36497a1a486979ebba71">More...</a><br/></td></tr>
+<tr class="separator:ace170c82c91c36497a1a486979ebba71 inherit pub_methods_classrlib_1_1SensorHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a handler class derived from the <a class="el" href="classrlib_1_1SensorHandler.html" title="*** Sensor Handler Abstract Class ***/// ">rlib::SensorHandler</a> class. It is designed for use with the Hokuyo <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> URG-04LX-UG01. The <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> is started using the Python lidar_server_tester.py written by Abhimanyu Ghosh. This client handler is a wrapper class for the client library hokuyo_client.cpp written by Brian Cairl. </p>
+<div class="textblock"><p>Hokuyo Lidar Handler class using IP connected Lidar. </p>
+<p>This is a handler class derived from the <a class="el" href="classrlib_1_1SensorHandler.html" title="Abstract class for all Sensor Handler objects. ">rlib::SensorHandler</a> class. It is designed for use with the Hokuyo Lidar URG-04LX-UG01. The Lidar is started using the Python lidar_server_tester.py written by Abhimanyu Ghosh. This client handler is a wrapper class for the client library hokuyo_client.cpp written by Brian Cairl. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6f771103bc0c0d5d989b8cd97ceaab54"></a>
+<a class="anchor" id="a5670fe812188c2a47f2095161ed6d5a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">rlib::HokuyoLidarHandlerIP::HokuyoLidarHandlerIP </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>port</em>&#160;</td>
         </tr>
         <tr>
@@ -151,12 +159,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Constructor for IP version of Hokoyu <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> Handler. </p>
-<p>The constructor for the handler needs the IP address and port number that the <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> is running on. </p>
+<p>Constructor for IP version of Hokoyu Lidar Handler. </p>
+<p>*** <a class="el" href="classrlib_1_1HokuyoLidarHandlerIP.html" title="Hokuyo Lidar Handler class using IP connected Lidar. ">HokuyoLidarHandlerIP</a> Class ***///</p>
+<p>The constructor for the handler needs the IP address and port number that the Lidar is running on. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip</td><td>This is the IP address of the computer that the <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> is connected to. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>This is the port number of the <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a> on the computer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ip</td><td>This is the IP address of the computer that the Lidar is connected to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>This is the port number of the Lidar on the computer. </td></tr>
   </table>
   </dd>
 </dl>
@@ -164,32 +173,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7882c2d6edebb830a9986d202ad05b41"></a>
+<a class="anchor" id="af1b24513e31b16fb97b9a9124f29bc40"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classrlib_1_1SensorData.html">SensorData</a> rlib::HokuyoLidarHandlerIP::getData </td>
+          <td class="memname"><a class="el" href="classrlib_1_1SensorData.html">SensorData</a> * rlib::HokuyoLidarHandlerIP::getData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets range and angle data from the sensor. </p>
-<p>Requests new sensor data from the <a class="el" href="classrlib_1_1Lidar.html" title="*** Some Basic Sensor Derivative Classes ***/// ">Lidar</a>. This is a blocking function. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classrlib_1_1SensorData.html" title="*** Sensor Data Abstract Class ***/// ">SensorData</a> The range and angle data packed into the <a class="el" href="classrlib_1_1SensorData.html" title="*** Sensor Data Abstract Class ***/// ">rlib::SensorData</a> format. </dd></dl>
+<p>Requests new sensor data from the Lidar. This is a blocking function. </p>
+<dl class="section return"><dt>Returns</dt><dd>The range and angle data packed into the <a class="el" href="classrlib_1_1SensorData.html" title="SensorData class for getting data from Sensors. ">rlib::SensorData</a> format. </dd></dl>
+
+<p>Implements <a class="el" href="classrlib_1_1SensorHandler.html#a7f9c3e855f436aab794969b3b5cc3193">rlib::SensorHandler</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="rlib__sensor_8hpp_source.html">rlib_sensor.hpp</a></li>
+<li>src/rlib_sensor.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 5 2015 00:05:39 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 15 2015 16:53:13 for Robotlib by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

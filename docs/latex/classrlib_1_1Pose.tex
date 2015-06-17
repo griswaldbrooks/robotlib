@@ -1,28 +1,130 @@
 \hypertarget{classrlib_1_1Pose}{\section{rlib\-:\-:Pose Class Reference}
 \label{classrlib_1_1Pose}\index{rlib\-::\-Pose@{rlib\-::\-Pose}}
 }
+
+
+Class for defining pose.  
+
+
+
+
+{\ttfamily \#include $<$rlib\-\_\-state.\-hpp$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1Pose_a89018f33db4278d47440d42d515ffccb}{{\bfseries Pose} (float x, float y=0, float z=0, float roll=0, float pitch=0, float yaw=0)}\label{classrlib_1_1Pose_a89018f33db4278d47440d42d515ffccb}
+\hypertarget{classrlib_1_1Pose_a0c47aadc845fe51dc9c8657920231c44}{\hyperlink{classrlib_1_1Pose_a0c47aadc845fe51dc9c8657920231c44}{Pose} ()}\label{classrlib_1_1Pose_a0c47aadc845fe51dc9c8657920231c44}
 
-\item 
-\hypertarget{classrlib_1_1Pose_a5b2693a81537396e831788fb4597c908}{void {\bfseries set\-X\-Y\-Z} (float x, float y, float z)}\label{classrlib_1_1Pose_a5b2693a81537396e831788fb4597c908}
-
-\item 
-\hypertarget{classrlib_1_1Pose_a4342dd9f96dc8efe40fca92f8a6b31be}{void {\bfseries set\-R\-P\-Y} (float roll, float pitch, float yaw)}\label{classrlib_1_1Pose_a4342dd9f96dc8efe40fca92f8a6b31be}
-
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classrlib_1_1Pose_a89018f33db4278d47440d42d515ffccb}{Pose} (float x, float y=0, float z=0, float roll=0, float pitch=0, float yaw=0)
+\begin{DoxyCompactList}\small\item\em Constructor with initial values as xyz and rpy. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Pose_a5b2693a81537396e831788fb4597c908}{set\-X\-Y\-Z} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Set linear pose. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Pose_a4342dd9f96dc8efe40fca92f8a6b31be}{set\-R\-P\-Y} (float roll, float pitch, float yaw)
+\begin{DoxyCompactList}\small\item\em Set angular position by setting rpy as in the constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1Pose_a79943a3bc939401f14ab8feadc6f9fb0}{Eigen\-::\-Translation$<$ float, 3 $>$ {\bfseries p}}\label{classrlib_1_1Pose_a79943a3bc939401f14ab8feadc6f9fb0}
-
+Eigen\-::\-Translation$<$ float, 3 $>$ \hyperlink{classrlib_1_1Pose_a79943a3bc939401f14ab8feadc6f9fb0}{p}
 \item 
-\hypertarget{classrlib_1_1Pose_ac598a727181b9ffbe5ac865239390437}{Eigen\-::\-Quaternion$<$ float $>$ {\bfseries q}}\label{classrlib_1_1Pose_ac598a727181b9ffbe5ac865239390437}
-
+Eigen\-::\-Quaternion$<$ float $>$ \hyperlink{classrlib_1_1Pose_ac598a727181b9ffbe5ac865239390437}{q}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Class for defining pose. 
+
+This class uses three translational elements and one quaternion to represent pose information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrlib_1_1Pose_a89018f33db4278d47440d42d515ffccb}{\index{rlib\-::\-Pose@{rlib\-::\-Pose}!Pose@{Pose}}
+\index{Pose@{Pose}!rlib::Pose@{rlib\-::\-Pose}}
+\subsubsection[{Pose}]{\setlength{\rightskip}{0pt plus 5cm}rlib\-::\-Pose\-::\-Pose (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y = {\ttfamily 0}, }
+\item[{float}]{z = {\ttfamily 0}, }
+\item[{float}]{roll = {\ttfamily 0}, }
+\item[{float}]{pitch = {\ttfamily 0}, }
+\item[{float}]{yaw = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Pose_a89018f33db4278d47440d42d515ffccb}
+
+
+Constructor with initial values as xyz and rpy. 
+
+rpy is Roll, Pitch, Yaw, or Tait-\/\-Brian angles. Roll is about the x axis, then pitch is about the new y axis, and yaw is about the final z axis. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & Translation in the x direction in meters. \\
+\hline
+\mbox{\tt in}  & {\em y} & Translation in the y direction in meters. \\
+\hline
+\mbox{\tt in}  & {\em z} & Translation in the z direction in meters. \\
+\hline
+\mbox{\tt in}  & {\em roll} & Rotation about the x direction in radians. \\
+\hline
+\mbox{\tt in}  & {\em pitch} & Rotation about the y' direction in radians where y' is the new y axis after performing the roll operation. \\
+\hline
+\mbox{\tt in}  & {\em yaw} & Rotation about the z'' direction in radians where z'' is the new z axis after performing the pitch operation. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1Pose_a4342dd9f96dc8efe40fca92f8a6b31be}{\index{rlib\-::\-Pose@{rlib\-::\-Pose}!set\-R\-P\-Y@{set\-R\-P\-Y}}
+\index{set\-R\-P\-Y@{set\-R\-P\-Y}!rlib::Pose@{rlib\-::\-Pose}}
+\subsubsection[{set\-R\-P\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Pose\-::set\-R\-P\-Y (
+\begin{DoxyParamCaption}
+\item[{float}]{roll, }
+\item[{float}]{pitch, }
+\item[{float}]{yaw}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Pose_a4342dd9f96dc8efe40fca92f8a6b31be}
+
+
+Set angular position by setting rpy as in the constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em roll} & Rotation about the x direction in radians. \\
+\hline
+\mbox{\tt in}  & {\em pitch} & Rotation about the y' direction in radians where y' is the new y axis after performing the roll operation. \\
+\hline
+\mbox{\tt in}  & {\em yaw} & Rotation about the z'' direction in radians where z'' is the new z axis after performing the pitch operation. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1Pose_a5b2693a81537396e831788fb4597c908}{\index{rlib\-::\-Pose@{rlib\-::\-Pose}!set\-X\-Y\-Z@{set\-X\-Y\-Z}}
+\index{set\-X\-Y\-Z@{set\-X\-Y\-Z}!rlib::Pose@{rlib\-::\-Pose}}
+\subsubsection[{set\-X\-Y\-Z}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Pose\-::set\-X\-Y\-Z (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Pose_a5b2693a81537396e831788fb4597c908}
+
+
+Set linear pose. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & Translation in the x direction in meters. \\
+\hline
+\mbox{\tt in}  & {\em y} & Translation in the y direction in meters. \\
+\hline
+\mbox{\tt in}  & {\em z} & Translation in the z direction in meters. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classrlib_1_1Pose_a79943a3bc939401f14ab8feadc6f9fb0}{\index{rlib\-::\-Pose@{rlib\-::\-Pose}!p@{p}}
+\index{p@{p}!rlib::Pose@{rlib\-::\-Pose}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Translation$<$float, 3$>$ rlib\-::\-Pose\-::p}}\label{classrlib_1_1Pose_a79943a3bc939401f14ab8feadc6f9fb0}
+Linear pose represented as x, y, z. \hypertarget{classrlib_1_1Pose_ac598a727181b9ffbe5ac865239390437}{\index{rlib\-::\-Pose@{rlib\-::\-Pose}!q@{q}}
+\index{q@{q}!rlib::Pose@{rlib\-::\-Pose}}
+\subsubsection[{q}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\-::\-Quaternion$<$float$>$ rlib\-::\-Pose\-::q}}\label{classrlib_1_1Pose_ac598a727181b9ffbe5ac865239390437}
+Angular pose represented as w, x, y, z. 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

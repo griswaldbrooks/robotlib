@@ -3,7 +3,7 @@
 }
 
 
-$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Lidar}{Lidar} Data Class $\ast$$\ast$$\ast$///  
+\hyperlink{classrlib_1_1LidarData}{Lidar\-Data} class for getting data from a Lidar \hyperlink{classrlib_1_1Sensor}{Sensor}.  
 
 
 
@@ -19,23 +19,123 @@ Inheritance diagram for rlib\-:\-:Lidar\-Data\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1LidarData_a57b4749e1274030136fce1e5fbbca33d}{{\bfseries Lidar\-Data} (std\-::vector$<$ float $>$ \&ranges, std\-::vector$<$ float $>$ \&angles)}\label{classrlib_1_1LidarData_a57b4749e1274030136fce1e5fbbca33d}
-
+\hyperlink{classrlib_1_1LidarData_a57b4749e1274030136fce1e5fbbca33d}{Lidar\-Data} (std\-::vector$<$ float $>$ \&ranges, std\-::vector$<$ float $>$ \&angles)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classrlib_1_1LidarData}{Lidar\-Data} objects. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classrlib_1_1LidarData_abf37f41dee75528211a93833e2d68520}{size} ()
+\begin{DoxyCompactList}\small\item\em Returns number of data elements. \end{DoxyCompactList}\item 
+float \hyperlink{classrlib_1_1LidarData_a7c0a03b228b5b85e81b35f2cc61e6008}{get\-Range} (float angle)
+\begin{DoxyCompactList}\small\item\em Get a range for a given angle. If no angle is found, method will return range to the closest angle. \end{DoxyCompactList}\item 
+const Eigen\-::\-Matrix$<$ float, \\*
+2, Eigen\-::\-Dynamic $>$ \& \hyperlink{classrlib_1_1LidarData_a4249c865a00c72fe80c8a210667c2ca4}{get\-Data} ()
+\begin{DoxyCompactList}\small\item\em Get the sensor data. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1LidarData_a1d9dc0bbc59f528f3d76492fd5aec816}{print\-To\-Stream} (std\-::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Print function for streams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1LidarData_abf37f41dee75528211a93833e2d68520}{size\-\_\-t {\bfseries size} ()}\label{classrlib_1_1LidarData_abf37f41dee75528211a93833e2d68520}
+\hypertarget{classrlib_1_1LidarData_ac142a9d8c3161d74c8d3d39c093ecde4}{std\-::ostream \& \hyperlink{classrlib_1_1LidarData_ac142a9d8c3161d74c8d3d39c093ecde4}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classrlib_1_1LidarData}{Lidar\-Data} \&data)}\label{classrlib_1_1LidarData_ac142a9d8c3161d74c8d3d39c093ecde4}
 
-\item 
-\hypertarget{classrlib_1_1LidarData_a7c0a03b228b5b85e81b35f2cc61e6008}{float {\bfseries get\-Range} (float angle)}\label{classrlib_1_1LidarData_a7c0a03b228b5b85e81b35f2cc61e6008}
-
-\item 
-\hypertarget{classrlib_1_1LidarData_a4249c865a00c72fe80c8a210667c2ca4}{const Eigen\-::\-Matrix$<$ float, \\*
-2, Eigen\-::\-Dynamic $>$ \& {\bfseries get\-Data} ()}\label{classrlib_1_1LidarData_a4249c865a00c72fe80c8a210667c2ca4}
-
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Print operator for Lidar Data. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Lidar}{Lidar} Data Class $\ast$$\ast$$\ast$/// 
+\hyperlink{classrlib_1_1LidarData}{Lidar\-Data} class for getting data from a Lidar \hyperlink{classrlib_1_1Sensor}{Sensor}. 
+
+This class is for encapsulating the data produced by a Lidar \hyperlink{classrlib_1_1Sensor}{Sensor} and making it easy to access the data in different ways. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrlib_1_1LidarData_a57b4749e1274030136fce1e5fbbca33d}{\index{rlib\-::\-Lidar\-Data@{rlib\-::\-Lidar\-Data}!Lidar\-Data@{Lidar\-Data}}
+\index{Lidar\-Data@{Lidar\-Data}!rlib::LidarData@{rlib\-::\-Lidar\-Data}}
+\subsubsection[{Lidar\-Data}]{\setlength{\rightskip}{0pt plus 5cm}rlib\-::\-Lidar\-Data\-::\-Lidar\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ float $>$ \&}]{ranges, }
+\item[{std\-::vector$<$ float $>$ \&}]{angles}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1LidarData_a57b4749e1274030136fce1e5fbbca33d}
+
+
+Constructor for \hyperlink{classrlib_1_1LidarData}{Lidar\-Data} objects. 
+
+$\ast$$\ast$$\ast$ Lidar Data Class $\ast$$\ast$$\ast$///
+
+The constructor for the needs a std\-::vector of ranges and angles. Each vector must be the same length and the indices must correspond with each others data. The vectors do not need to be sorted by angle, and in general are not. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ranges} & This is the I\-P address of the computer that the Lidar is connected to. \\
+\hline
+\mbox{\tt in}  & {\em angles} & This is the port number of the Lidar on the computer. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1LidarData_a4249c865a00c72fe80c8a210667c2ca4}{\index{rlib\-::\-Lidar\-Data@{rlib\-::\-Lidar\-Data}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!rlib::LidarData@{rlib\-::\-Lidar\-Data}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}const Eigen\-::\-Matrix$<$ float, 2, Eigen\-::\-Dynamic $>$ \& rlib\-::\-Lidar\-Data\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1LidarData_a4249c865a00c72fe80c8a210667c2ca4}
+
+
+Get the sensor data. 
+
+\begin{DoxyReturn}{Returns}
+A 2x2 Matrix of floats of ranges and angles in meters and radians. The ranges are on the first row and their corresponding angles are on the second row. 
+\end{DoxyReturn}
+\hypertarget{classrlib_1_1LidarData_a7c0a03b228b5b85e81b35f2cc61e6008}{\index{rlib\-::\-Lidar\-Data@{rlib\-::\-Lidar\-Data}!get\-Range@{get\-Range}}
+\index{get\-Range@{get\-Range}!rlib::LidarData@{rlib\-::\-Lidar\-Data}}
+\subsubsection[{get\-Range}]{\setlength{\rightskip}{0pt plus 5cm}float rlib\-::\-Lidar\-Data\-::get\-Range (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1LidarData_a7c0a03b228b5b85e81b35f2cc61e6008}
+
+
+Get a range for a given angle. If no angle is found, method will return range to the closest angle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle} & The angle in radians to get a range for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The range in meters. 
+\end{DoxyReturn}
+\hypertarget{classrlib_1_1LidarData_a1d9dc0bbc59f528f3d76492fd5aec816}{\index{rlib\-::\-Lidar\-Data@{rlib\-::\-Lidar\-Data}!print\-To\-Stream@{print\-To\-Stream}}
+\index{print\-To\-Stream@{print\-To\-Stream}!rlib::LidarData@{rlib\-::\-Lidar\-Data}}
+\subsubsection[{print\-To\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Lidar\-Data\-::print\-To\-Stream (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrlib_1_1LidarData_a1d9dc0bbc59f528f3d76492fd5aec816}
+
+
+Print function for streams. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & The output stream that the data should be printed to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrlib_1_1SensorData}{rlib\-::\-Sensor\-Data}.
+
+\hypertarget{classrlib_1_1LidarData_abf37f41dee75528211a93833e2d68520}{\index{rlib\-::\-Lidar\-Data@{rlib\-::\-Lidar\-Data}!size@{size}}
+\index{size@{size}!rlib::LidarData@{rlib\-::\-Lidar\-Data}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t rlib\-::\-Lidar\-Data\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1LidarData_abf37f41dee75528211a93833e2d68520}
+
+
+Returns number of data elements. 
+
+\begin{DoxyReturn}{Returns}
+The number of range angle pairs in the set. 
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

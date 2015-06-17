@@ -3,44 +3,109 @@
 }
 
 
-$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Abstract Class $\ast$$\ast$$\ast$///  
+Abstract class for creating \hyperlink{classrlib_1_1Sensor}{Sensor} objects.  
 
 
 
 
 {\ttfamily \#include $<$rlib\-\_\-sensor.\-hpp$>$}
 
-Inheritance diagram for rlib\-:\-:Sensor\-:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classrlib_1_1Sensor}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classrlib_1_1Sensor_a2c91acd4bed299a37f744f67e3ed1c98}{\hyperlink{classrlib_1_1Sensor_a2c91acd4bed299a37f744f67e3ed1c98}{Sensor} (const char $\ast$name)}\label{classrlib_1_1Sensor_a2c91acd4bed299a37f744f67e3ed1c98}
+\hyperlink{classrlib_1_1Sensor_a2c91acd4bed299a37f744f67e3ed1c98}{Sensor} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Constructor for building Sensors. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classrlib_1_1Sensor_a398dc38404983a823704271bd78434dd}{get\-Name} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the sensor. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Sensor_a23e53ef67e2ed8c566122576894bba21}{set\-Frame} (\hyperlink{classrlib_1_1Transform}{Transform} tf)
+\begin{DoxyCompactList}\small\item\em Sets the coordinate transformation between the parent and the sensor. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1Sensor_a921157d5efc532bd008eb7b45ab44bc6}{virtual void \hyperlink{classrlib_1_1Sensor_a921157d5efc532bd008eb7b45ab44bc6}{start\-Sensor} ()}\label{classrlib_1_1Sensor_a921157d5efc532bd008eb7b45ab44bc6}
 
-\begin{DoxyCompactList}\small\item\em $\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Abstract Class $\ast$$\ast$$\ast$/// \end{DoxyCompactList}\item 
-\hypertarget{classrlib_1_1Sensor_a398dc38404983a823704271bd78434dd}{std\-::string {\bfseries get\-Name} ()}\label{classrlib_1_1Sensor_a398dc38404983a823704271bd78434dd}
+\begin{DoxyCompactList}\small\item\em Starts the sensor. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1Sensor_ae871bf2e5863a0f6501124469b785c56}{virtual void \hyperlink{classrlib_1_1Sensor_ae871bf2e5863a0f6501124469b785c56}{stop\-Sensor} ()}\label{classrlib_1_1Sensor_ae871bf2e5863a0f6501124469b785c56}
 
-\item 
-\hypertarget{classrlib_1_1Sensor_a23e53ef67e2ed8c566122576894bba21}{void {\bfseries set\-Frame} (\hyperlink{classrlib_1_1Transform}{Transform} tf)}\label{classrlib_1_1Sensor_a23e53ef67e2ed8c566122576894bba21}
+\begin{DoxyCompactList}\small\item\em Stops the sensor. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1Sensor_a153050f981af4d85b60732b38503f1f6}{virtual \hyperlink{classrlib_1_1SensorData}{Sensor\-Data} $\ast$ \hyperlink{classrlib_1_1Sensor_a153050f981af4d85b60732b38503f1f6}{get\-Data} ()}\label{classrlib_1_1Sensor_a153050f981af4d85b60732b38503f1f6}
 
-\item 
-\hypertarget{classrlib_1_1Sensor_a671966372280f694136d6b0880fdce33}{virtual void {\bfseries start\-Sensor} ()=0}\label{classrlib_1_1Sensor_a671966372280f694136d6b0880fdce33}
-
-\item 
-\hypertarget{classrlib_1_1Sensor_a14db3d6d3bdcac79411c1abbb6439f41}{virtual void {\bfseries stop\-Sensor} ()=0}\label{classrlib_1_1Sensor_a14db3d6d3bdcac79411c1abbb6439f41}
-
-\item 
-\hypertarget{classrlib_1_1Sensor_aff2b43bfdd9e41444000924ba72ef9c6}{virtual \hyperlink{classrlib_1_1SensorData}{Sensor\-Data} {\bfseries get\-Data} ()=0}\label{classrlib_1_1Sensor_aff2b43bfdd9e41444000924ba72ef9c6}
-
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets data from the sensor. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1Sensor_a58b2a48700db3e057749395f1da121df}{set\-Handler} (\hyperlink{classrlib_1_1SensorHandler}{Sensor\-Handler} $\ast$handler)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{classrlib_1_1SensorHandler}{Sensor\-Handler} for this sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Abstract Class $\ast$$\ast$$\ast$/// 
+Abstract class for creating \hyperlink{classrlib_1_1Sensor}{Sensor} objects. 
+
+This class defines the abstract class that all \hyperlink{classrlib_1_1Sensor}{Sensor} derivatives must follow. It is intended for handling representation details of any sensor. It must have a \hyperlink{classrlib_1_1SensorHandler}{Sensor\-Handler} in order to interact with a physical sensor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrlib_1_1Sensor_a2c91acd4bed299a37f744f67e3ed1c98}{\index{rlib\-::\-Sensor@{rlib\-::\-Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!rlib::Sensor@{rlib\-::\-Sensor}}
+\subsubsection[{Sensor}]{\setlength{\rightskip}{0pt plus 5cm}rlib\-::\-Sensor\-::\-Sensor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Sensor_a2c91acd4bed299a37f744f67e3ed1c98}
+
+
+Constructor for building Sensors. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classrlib_1_1Sensor}{Sensor} Abstract Class $\ast$$\ast$$\ast$///
+
+Each sensor must have a name. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name the sensor will have, used as a unique I\-D. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1Sensor_a398dc38404983a823704271bd78434dd}{\index{rlib\-::\-Sensor@{rlib\-::\-Sensor}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!rlib::Sensor@{rlib\-::\-Sensor}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string rlib\-::\-Sensor\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Sensor_a398dc38404983a823704271bd78434dd}
+
+
+Gets the name of the sensor. 
+
+\begin{DoxyReturn}{Returns}
+The name of the sensor. 
+\end{DoxyReturn}
+\hypertarget{classrlib_1_1Sensor_a23e53ef67e2ed8c566122576894bba21}{\index{rlib\-::\-Sensor@{rlib\-::\-Sensor}!set\-Frame@{set\-Frame}}
+\index{set\-Frame@{set\-Frame}!rlib::Sensor@{rlib\-::\-Sensor}}
+\subsubsection[{set\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Sensor\-::set\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Transform}}]{tf}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Sensor_a23e53ef67e2ed8c566122576894bba21}
+
+
+Sets the coordinate transformation between the parent and the sensor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tf} & The tranformation that brings the parent frame to the sensor frame. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1Sensor_a58b2a48700db3e057749395f1da121df}{\index{rlib\-::\-Sensor@{rlib\-::\-Sensor}!set\-Handler@{set\-Handler}}
+\index{set\-Handler@{set\-Handler}!rlib::Sensor@{rlib\-::\-Sensor}}
+\subsubsection[{set\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Sensor\-::set\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Sensor\-Handler} $\ast$}]{handler}
+\end{DoxyParamCaption}
+)}}\label{classrlib_1_1Sensor_a58b2a48700db3e057749395f1da121df}
+
+
+Sets the \hyperlink{classrlib_1_1SensorHandler}{Sensor\-Handler} for this sensor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em handler} & The \hyperlink{classrlib_1_1SensorHandler}{Sensor\-Handler} object that interacts with the physical sensor. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

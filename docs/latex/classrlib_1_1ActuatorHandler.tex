@@ -1,0 +1,73 @@
+\hypertarget{classrlib_1_1ActuatorHandler}{\section{rlib\-:\-:Actuator\-Handler Class Reference}
+\label{classrlib_1_1ActuatorHandler}\index{rlib\-::\-Actuator\-Handler@{rlib\-::\-Actuator\-Handler}}
+}
+
+
+Abstract handler class for implementing actuators.  
+
+
+
+
+{\ttfamily \#include $<$rlib\-\_\-actuator.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classrlib_1_1ActuatorHandler_a9f569a4afb19240f02971693c0cc428d}{\hyperlink{classrlib_1_1ActuatorHandler_a9f569a4afb19240f02971693c0cc428d}{Actuator\-Handler} ()}\label{classrlib_1_1ActuatorHandler_a9f569a4afb19240f02971693c0cc428d}
+
+\begin{DoxyCompactList}\small\item\em Default Handler constructor. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1ActuatorHandler_a1baacad1bffc427ef593f69cbd9ca7b7}{virtual void \hyperlink{classrlib_1_1ActuatorHandler_a1baacad1bffc427ef593f69cbd9ca7b7}{start\-Sensor} ()=0}\label{classrlib_1_1ActuatorHandler_a1baacad1bffc427ef593f69cbd9ca7b7}
+
+\begin{DoxyCompactList}\small\item\em Initializes and starts actuator. \end{DoxyCompactList}\item 
+\hypertarget{classrlib_1_1ActuatorHandler_a5b9557657cd6876b10992e29986592fa}{virtual void \hyperlink{classrlib_1_1ActuatorHandler_a5b9557657cd6876b10992e29986592fa}{stop\-Sensor} ()=0}\label{classrlib_1_1ActuatorHandler_a5b9557657cd6876b10992e29986592fa}
+
+\begin{DoxyCompactList}\small\item\em Stops actuator. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1ActuatorHandler_a7eab23dd7e81f0d906a39c247737dae5}{set\-Position} (\hyperlink{classrlib_1_1Pose}{Pose} pose)=0
+\begin{DoxyCompactList}\small\item\em Commands actuator to a position. \end{DoxyCompactList}\item 
+void \hyperlink{classrlib_1_1ActuatorHandler_a7ce1ab5d1debc269afcfa4f88082791c}{set\-Velocity} (\hyperlink{classrlib_1_1Vel}{Vel} velocity)=0
+\begin{DoxyCompactList}\small\item\em Commands actuator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract handler class for implementing actuators. 
+
+\hyperlink{classrlib_1_1ActuatorHandler}{Actuator\-Handler} objects are used by the \hyperlink{classrlib_1_1Actuator}{Actuator} class for commanding actuator hardware. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classrlib_1_1ActuatorHandler_a7eab23dd7e81f0d906a39c247737dae5}{\index{rlib\-::\-Actuator\-Handler@{rlib\-::\-Actuator\-Handler}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!rlib::ActuatorHandler@{rlib\-::\-Actuator\-Handler}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Actuator\-Handler\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Pose}}]{pose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classrlib_1_1ActuatorHandler_a7eab23dd7e81f0d906a39c247737dae5}
+
+
+Commands actuator to a position. 
+
+Commands actuator to a position setpoint. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pose} & The pose of the actuator with respect to its origin. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classrlib_1_1ActuatorHandler_a7ce1ab5d1debc269afcfa4f88082791c}{\index{rlib\-::\-Actuator\-Handler@{rlib\-::\-Actuator\-Handler}!set\-Velocity@{set\-Velocity}}
+\index{set\-Velocity@{set\-Velocity}!rlib::ActuatorHandler@{rlib\-::\-Actuator\-Handler}}
+\subsubsection[{set\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void rlib\-::\-Actuator\-Handler\-::set\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Vel}}]{velocity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classrlib_1_1ActuatorHandler_a7ce1ab5d1debc269afcfa4f88082791c}
+
+
+Commands actuator. 
+
+Commands actuator to setpoint. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em The} & sensor data packed into the \hyperlink{classrlib_1_1SensorData}{rlib\-::\-Sensor\-Data} format. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/rlib\-\_\-actuator.\-hpp\end{DoxyCompactItemize}

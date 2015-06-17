@@ -124,6 +124,19 @@ test_nao/fast:
 	$(MAKE) -f CMakeFiles/test_nao.dir/build.make CMakeFiles/test_nao.dir/build
 .PHONY : test_nao/fast
 
+#=============================================================================
+# Target rules for targets named test_navigation
+
+# Build rule for target.
+test_navigation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_navigation
+.PHONY : test_navigation
+
+# fast build rule for target.
+test_navigation/fast:
+	$(MAKE) -f CMakeFiles/test_navigation.dir/build.make CMakeFiles/test_navigation.dir/build
+.PHONY : test_navigation/fast
+
 src/rlib_actuator_tester.o: src/rlib_actuator_tester.cpp.o
 .PHONY : src/rlib_actuator_tester.o
 
@@ -172,6 +185,30 @@ src/rlib_nao_tester.cpp.s:
 	$(MAKE) -f CMakeFiles/test_nao.dir/build.make CMakeFiles/test_nao.dir/src/rlib_nao_tester.cpp.s
 .PHONY : src/rlib_nao_tester.cpp.s
 
+src/rlib_navigation_tester.o: src/rlib_navigation_tester.cpp.o
+.PHONY : src/rlib_navigation_tester.o
+
+# target to build an object file
+src/rlib_navigation_tester.cpp.o:
+	$(MAKE) -f CMakeFiles/test_navigation.dir/build.make CMakeFiles/test_navigation.dir/src/rlib_navigation_tester.cpp.o
+.PHONY : src/rlib_navigation_tester.cpp.o
+
+src/rlib_navigation_tester.i: src/rlib_navigation_tester.cpp.i
+.PHONY : src/rlib_navigation_tester.i
+
+# target to preprocess a source file
+src/rlib_navigation_tester.cpp.i:
+	$(MAKE) -f CMakeFiles/test_navigation.dir/build.make CMakeFiles/test_navigation.dir/src/rlib_navigation_tester.cpp.i
+.PHONY : src/rlib_navigation_tester.cpp.i
+
+src/rlib_navigation_tester.s: src/rlib_navigation_tester.cpp.s
+.PHONY : src/rlib_navigation_tester.s
+
+# target to generate assembly for a file
+src/rlib_navigation_tester.cpp.s:
+	$(MAKE) -f CMakeFiles/test_navigation.dir/build.make CMakeFiles/test_navigation.dir/src/rlib_navigation_tester.cpp.s
+.PHONY : src/rlib_navigation_tester.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,12 +219,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_actuator"
 	@echo "... test_nao"
+	@echo "... test_navigation"
 	@echo "... src/rlib_actuator_tester.o"
 	@echo "... src/rlib_actuator_tester.i"
 	@echo "... src/rlib_actuator_tester.s"
 	@echo "... src/rlib_nao_tester.o"
 	@echo "... src/rlib_nao_tester.i"
 	@echo "... src/rlib_nao_tester.s"
+	@echo "... src/rlib_navigation_tester.o"
+	@echo "... src/rlib_navigation_tester.i"
+	@echo "... src/rlib_navigation_tester.s"
 .PHONY : help
 
 
