@@ -51,6 +51,14 @@ namespace rlib{
 		*/
 		friend std::ostream& operator<<( std::ostream& os, SensorData& data);
 
+		/// This whole thing should be reworked into templates.
+		/*!
+		* \brief Get the sensor data.
+		* \return 	A 2x2 Matrix of floats of ranges and angles in meters and radians. The ranges are on the
+		*			first row and their corresponding angles are on the second row.
+		*/
+		virtual const Eigen::Matrix<float, 2, Eigen::Dynamic> & getData() = 0;
+
 		/*!
 		* \brief Print function for streams.
 		* \param[in] os 	The output stream that the data should be printed to.
@@ -66,9 +74,9 @@ namespace rlib{
 
 	class InfraredData : public SensorData{};
 
-	class ImageData : public SensorData{};
+	// class ImageData : public SensorData{};
 
-	class PointCloudData : public SensorData{};
+	// class PointCloudData : public SensorData{};
 
 	/*! \brief LidarData class for getting data from a Lidar Sensor. */
 	/** 

@@ -114,21 +114,21 @@ namespace rlib{
 	*/
 	// Mediator function.
 	void Robot::run(){
-		// Update sensors.
-		std::list<Sensor*>::iterator sensors;
-		for(sensors = _sensors->begin(); sensors != _sensors->end(); sensors++){
-			sensors->update();
-		}
+		// // Update sensors.
+		// std::list<Sensor*>::iterator sensors;
+		// for(sensors = _sensors.begin(); sensors != _sensors.end(); sensors++){
+		// 	sensors->update();
+		// }
 
-		// Update reference commands.
-		Pose next_pose_ref = _planner->getNextPose();
-		Vel  next_vel_ref  = _planner->getNextVel();
+		// // Update reference commands.
+		// Pose next_pose_ref = _planner->getNextPose();
+		// Vel  next_vel_ref  = _planner->getNextVel();
 
-		// Update actuators.
-		std::list<Actuator*>::iterator actuators;
-		for(actuators = _actuators->begin(); actuators != _actuators->end(); actuators++){
-			actuators->update();
-		}
+		// // Update actuators.
+		// std::list<Actuator*>::iterator actuators;
+		// for(actuators = _actuators.begin(); actuators != _actuators.end(); actuators++){
+		// 	actuators->update();
+		// }
 
 	}
 
